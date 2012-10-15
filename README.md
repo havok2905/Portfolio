@@ -5,7 +5,6 @@
     <ul>
       <li>Needs some work on the color scheme for the header/footer</li>
       <li>Needs photography work for personal images</li>
-      <li>Needs non placeholder project images</li>
       <li>Needs text content</li>
       <li>Needs clean social media buttons</li>
     </ul>
