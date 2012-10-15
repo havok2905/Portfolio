@@ -9,8 +9,4 @@
       <li>Needs text content</li>
     </ul>
   </li>
-  <li>Blog Posts
-    <ul>
-      <li>Needs text content for blog posts</li>
-    </ul>
-  </li>
+</ul>
