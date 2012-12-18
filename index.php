@@ -7,7 +7,6 @@
 
 <div>
 	<img src="">
-	<h3></h3>
 </div>
 <div>
 	<h3>What I Can Do</h3>
