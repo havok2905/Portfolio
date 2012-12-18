@@ -15,9 +15,9 @@
 		<li>
 			<a href="">
 				<img src=""/>
-				<h4>Development</h4>
+				<h4>DEVELOPMENT</h4>
 			</a>
-			<ul>
+			<ul class="seriftext">
 				<li>XHTML, JavaScript, CSS3</li>
 				<li>PHP &amp; Fuel PHP Framework</li>
 				<li>MYSQL &amp; Database Architecture</li>
@@ -28,9 +28,9 @@
 		<li>
 			<a href="">
 				<img src=""/>
-				<h4>Mobile</h4>
+				<h4>MOBILE</h4>
 			</a>
-			<ul>
+			<ul class="seriftext">
 				<li>Android Development</li>
 				<li>IOS Development</li>
 				<li>Mobile Web Development</li>
@@ -41,9 +41,9 @@
 		<li>
 			<a href="">
 				<img src=""/>
-				<h4>Design</h4>
+				<h4>DESIGN</h4>
 			</a>
-			<ul>
+			<ul class="seriftext">
 				<li>Web &amp; Mobile Layouts</li>
 				<li>Logo Design &amp; Web Graphics</li>
 				<li>Identity Branding</li>
@@ -54,9 +54,9 @@
 		<li>
 			<a href="">
 				<img src=""/>
-				<h4>Interactivity</h4>
+				<h4>ITERACTIVITY</h4>
 			</a>
-			<ul>
+			<ul class="seriftext">
 				<li>Gamification</li>
 				<li>Interactive Design</li>
 				<li>Human Computer Interaction</li>

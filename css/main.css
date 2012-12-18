@@ -1,0 +1,87 @@
+@font-face {
+    font-family:ChapPro;
+    src: url(../fonts/Chap/ChaparralPro-BoldIt.otf) format("opentype"),
+    	 url(../fonts/Chap/ChaparralPro-BoldIt.eot?#iefix) format('embedded-opentype'),
+    	 url(../fonts/Chap/ChaparralPro-BoldIt.woff) format('woff'),
+    	 url(../fonts/Chap/ChaparralPro-BoldIt.ttf) format('truetype'),
+    	 url(../fonts/Chap/ChaparralPro-BoldIt.svg) format('svg');
+	font-weight:900;
+}
+
+@font-face {
+    font-family:GandhiSerifRegular;
+    src: url(../fonts/Ghandi/GandhiSerif-Regular-webfont.eot);
+    src: url(../fonts/Ghandi/GandhiSerif-Regular-webfont.eot?#iefix) format('embedded-opentype'),
+         url(../fonts/Ghandi/GandhiSerif-Regular-webfont.woff) format('woff'),
+         url(../fonts/Ghandi/GandhiSerif-Regular-webfont.ttf) format('truetype'),
+         url(../fonts/Ghandi/GandhiSerif-Regular-webfont.svg#GandhiSerifRegular) format('svg');
+}
+
+
+
+/* HEADERS & TEXT */
+
+h1{
+	font-family: ChapPro;
+	font-size: 3em;
+	color: #4490A4;
+	letter-spacing: -0.05em;
+}
+
+h2{
+	font-family: Arial;
+	font-size: 1.125em;
+	color: #656565;
+	letter-spacing: -0.05em;
+}
+
+h3{
+	font-family: ChapPro;
+	font-size: 2em;
+	color: #4490A4;
+	letter-spacing: -0.05em;
+}
+h3 a{text-decoration: underline; color:#4490A4;}
+h3 a:hover{color:#999999;}
+
+h4{
+	font-family: Arial;
+	font-size: 1.3em;
+	font-weight: 900;
+	color: #4490A4;
+}
+
+h5{
+
+}
+
+h6{
+
+}
+
+a{
+	text-decoration: none;
+	color: #000;
+}
+
+ul.nav a{
+	font-family: Arial;
+	font-size: 1.125em;
+	color: #656565;
+	letter-spacing: -0.05em;
+}
+
+.seriftext{
+	font-family: Ghandi;
+	color:#333;
+}
+
+.normlink{
+
+}
+
+.bold{
+	font-weight: bold;
+}
+
+

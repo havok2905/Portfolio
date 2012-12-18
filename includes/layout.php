@@ -22,10 +22,10 @@
 		<script type="text/javascript" src="js/main.js"></script>
 	</head>
 	<body>
-		<div>
+		<div class="header">
 			<h1><img src="">Christopher McLean</h1>
 			<h2>web developer &amp; designer</h2>
-			<ul>
+			<ul class="nav">
 				<li><img src=""/><a href="index.php">home</a></li>
 				<li><img src=""/><a href="me.php">me</a></li>
 				<li><img src=""/><a href="resume.php">resume</a></li>
@@ -41,7 +41,7 @@ EOT;
 		public static function footer()
 		{
 			$response = <<<EOT
-		<div>
+		<div class="footer">
 			<h3>Send Me A Message!</h3>
 			<form name="email" action="" method="post">
 				<textarea name="message">Message goes here...</textarea>
