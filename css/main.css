@@ -35,9 +35,6 @@ body{
 	max-width: 62.5em;
 	margin-left: auto;
 	margin-right: auto;
-}
-
-.container{
 	padding-top:7em;
 }
 
@@ -56,13 +53,14 @@ body{
 }
 
 .contact_container{
-	clear:both;
+	position:relative;
+	top:-1em;
+	display: inline-block;
 }
 
 .contact_sub_container{
 	margin-top: 1em;
 	margin-right: 2em;
-	float:left;
 }
 
 .footer{
@@ -109,7 +107,6 @@ h4{
 	font-size: 1.3em;
 	font-weight: 900;
 	color: #4490A4;
-	margin-bottom: 0.25em;
 }
 
 h5{
@@ -170,15 +167,26 @@ ul li span{
 }
 
 /* FORMS AND INPUTS */
-
 form{
-	display:block;
+	float: left;
+	display:inline;
+	margin-right: 2em;
 }
+
+.input_container{float: left;}
 
 .styledform{
 	border-radius: 0.5em;
 	border: none;
 	box-shadow: inset #333333 0px 0px 3px;
+}
+
+.submit{
+	border: none;
+	border-radius: 0.5em;
+	background-color: #4490A4;
+	color:#FAFAFA;
+
 }
 
 textarea{
@@ -192,7 +200,9 @@ input{
 	width:12.5em;
 	height:2em;
 	margin-bottom: 0.6em;
+	display: block;
 	text-align: center;
 }
+
 
 

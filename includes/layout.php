@@ -56,7 +56,7 @@ EOT;
 						<input class="styledform" type="text" name="name" value="name"/>
 						<input class="styledform" type="text" name="email" value="email"/>
 						<input class="styledform" type="text" name="subject" value="subject"/>
-						<input type="submit" name="send" value="send"/>
+						<input class="submit" type="submit" name="send" value="send"/>
 					</div>
 				</form>
 				<div class="contact_container">
