@@ -186,6 +186,10 @@ ul li span{
 	margin: 1em;
 }
 
+.inlinelist li{
+	display: inline;
+}
+
 p{
 	font-family: Ghandi;
 	font-size: 1em;
