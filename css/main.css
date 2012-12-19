@@ -11,7 +11,7 @@
 }
 
 @font-face {
-    font-family:GandhiSerifRegular;
+    font-family:Gandhi;
     src: url(../fonts/Ghandi/GandhiSerif-Regular-webfont.eot);
     src: url(../fonts/Ghandi/GandhiSerif-Regular-webfont.eot?#iefix) format('embedded-opentype'),
          url(../fonts/Ghandi/GandhiSerif-Regular-webfont.woff) format('woff'),
@@ -19,10 +19,13 @@
          url(../fonts/Ghandi/GandhiSerif-Regular-webfont.svg#GandhiSerifRegular) format('svg');
 }
 
-/* CONTAINERS */
+/* CONTAINERS AND GLOBAL */
 
 body{
 	width: 100%;
+	color:#333;
+	font-family: Gandhi;
+	line-height: 1.625em;
 }
 
 .clear{
@@ -36,6 +39,8 @@ body{
 	margin-left: auto;
 	margin-right: auto;
 	padding-top:8em;
+	padding-left: 1em;
+	padding-right: 1em;
 }
 
 .header{
@@ -69,7 +74,6 @@ body{
 	padding-bottom: 1em;
 	background-color: #353535;
 }
-
 
 /* HEADERS & TEXT */
 
@@ -116,13 +120,18 @@ h4{
 	margin-top: 0.5em;
 	margin-bottom: 0.5em;
 }
-
-h5{
-
+h4.resume{
+	font-family: ChapPro;
+	font-weight: bold;
+	font-size: 1.5em;
+	color: #333333;
 }
 
-h6{
-
+h5{
+	font-family: ChapPro;
+	font-weight: bold;
+	font-size: 1em;
+	color: #4490A4;
 }
 
 a{
@@ -157,26 +166,37 @@ ul li span{
 	display: none;
 }
 
-.seriftext{
-	font-family: Ghandi;
-	color:#333;
+.markedlist li{
+	list-style-type: disc;
+	margin-left: 1em;
+}
+
+.inlinelist li{display: inline;}
+
+.floatinglist{
+	background-color: #4490A4;
+	padding: 1em;
+	border-radius: 0.5em;
+	position: fixed;
+	left: 85%;
+	box-shadow: #666 0px 1px 5px;
+}
+
+.floatinglist li a{
+	color: #FFFFFF;
+	font-family: Gandhi;
+}
+
+.floatinglist li a:hover{
+	text-decoration: underline;
 }
 
 .footertext{
-	font-family: Ghandi;
 	color:#FAFAFA;
 }
 
 .footertext a{
 	color:#FAFAFA;
-}
-
-.normlink{
-
-}
-
-.bold{
-	font-weight: bold;
 }
 
 .left{
@@ -186,18 +206,12 @@ ul li span{
 	margin: 1em;
 }
 
-.inlinelist li{
-	display: inline;
-}
-
 p{
-	font-family: Ghandi;
-	font-size: 1em;
-	color:#666;
-	line-height: 1.625em;
 	margin-bottom: 1.625em;
 	max-width:42.813em;
 }
+
+strong{font-weight: bold;}	
 
 /* FORMS AND INPUTS */
 form{
