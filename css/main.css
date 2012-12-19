@@ -113,6 +113,8 @@ h4{
 	font-size: 1.3em;
 	font-weight: 900;
 	color: #4490A4;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
 }
 
 h5{
@@ -126,6 +128,11 @@ h6{
 a{
 	text-decoration: none;
 	color: #000;
+}
+
+ul li
+{
+	margin-bottom: 0.5em;
 }
 
 ul.nav{
@@ -170,6 +177,13 @@ ul li span{
 
 .bold{
 	font-weight: bold;
+}
+
+.left{
+	width: 13.5em;
+	text-align: center;
+	float: left;
+	margin: 1em;
 }
 
 p{
