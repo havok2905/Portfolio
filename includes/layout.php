@@ -51,11 +51,11 @@ EOT;
 			<div class="header_container">
 				<h3>Send Me A Message!</h3>
 				<form name="email" action="" method="post">
-					<textarea name="message" class="styledform">Message goes here...</textarea>
+					<textarea name="message" class="styledform"></textarea>
 					<div class="input_container">
-						<input class="styledform" type="text" name="name" value="name"/>
-						<input class="styledform" type="text" name="email" value="email"/>
-						<input class="styledform" type="text" name="subject" value="subject"/>
+						<input class="styledform" type="text" name="name" placeholder="name"/>
+						<input class="styledform" type="text" name="email" placeholder="email"/>
+						<input class="styledform" type="text" name="subject" placeholder="subject"/>
 						<input class="submit" type="submit" name="send" value="send"/>
 					</div>
 				</form>

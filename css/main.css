@@ -166,6 +166,15 @@ ul li span{
 	font-weight: bold;
 }
 
+p{
+	font-family: Ghandi;
+	font-size: 1em;
+	color:#666;
+	line-height: 1.625em;
+	margin-bottom: 1.625em;
+	max-width:42.813em;
+}
+
 /* FORMS AND INPUTS */
 form{
 	float: left;
