@@ -62,7 +62,7 @@ EOT;
 				<div class="contact_container">
 					<div class="contact_sub_container">
 						<h4>Follow Me</h4>
-						<ul>
+						<ul class="footertext">
 							<li><a href="https://plus.google.com/u/0/108287038105459970762/posts"><img src=""/><span>google+</span></a></li>
 							<li><a href="https://github.com/havok2905"><img src=""/><span>github</span></a></li>
 							<li><a href="http://www.linkedin.com/pub/christopher-mclean/23/261/789"><img src=""></img><span>linkedin</span></a></li>
@@ -70,7 +70,7 @@ EOT;
 					</div>
 					<div class="contact_sub_container">
 						<h4>Contact Info</h4>
-						<ul>
+						<ul class="footertext">
 							<li>254-424-4921</li>
 							<li>mclean.webdev@gmail.com</li>
 							<li>1829 Loftway Circle, Apt 1422</li>

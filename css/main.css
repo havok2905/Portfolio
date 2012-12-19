@@ -109,8 +109,8 @@ h4{
 	font-size: 1.3em;
 	font-weight: 900;
 	color: #4490A4;
+	margin-bottom: 0.25em;
 }
-.contact_sub_container h4{color: #FAFAFA}
 
 h5{
 
@@ -143,9 +143,22 @@ ul.nav a{
 	letter-spacing: -0.05em;
 }
 
+ul li span{
+	display: none;
+}
+
 .seriftext{
 	font-family: Ghandi;
 	color:#333;
+}
+
+.footertext{
+	font-family: Ghandi;
+	color:#FAFAFA;
+}
+
+.footertext a{
+	color:#FAFAFA;
 }
 
 .normlink{
