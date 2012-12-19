@@ -13,7 +13,7 @@
 	<ul>
 		<li>
 			<a href="">
-				<img src=""/>
+				<img src="img/laptop.png"/>
 				<h4>DEVELOPMENT</h4>
 			</a>
 			<ul class="seriftext">
@@ -26,7 +26,7 @@
 		</li>
 		<li>
 			<a href="">
-				<img src=""/>
+				<img src="img/phone.png"/>
 				<h4>MOBILE</h4>
 			</a>
 			<ul class="seriftext">
@@ -39,7 +39,7 @@
 		</li>
 		<li>
 			<a href="">
-				<img src=""/>
+				<img src="img/design.png"/>
 				<h4>DESIGN</h4>
 			</a>
 			<ul class="seriftext">
@@ -52,7 +52,7 @@
 		</li>
 		<li>
 			<a href="">
-				<img src=""/>
+				<img src="img/graph.png"/>
 				<h4>ITERACTIVITY</h4>
 			</a>
 			<ul class="seriftext">

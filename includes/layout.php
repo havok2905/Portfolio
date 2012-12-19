@@ -25,7 +25,7 @@
 		<div class="header">
 			<div class="header_container">
 				<div class="headers">
-					<h1><img src="">Christopher McLean</h1>
+					<h1><img src="img/icon_thumb.png">Christopher McLean</h1>
 					<h2>web developer &amp; designer</h2>
 				</div>
 				<ul class="nav">
@@ -37,6 +37,7 @@
 				</ul>
 			</div>
 		</div>
+		<div class="clear"></div>
 		<div class="container">
 EOT;
 			return $response;
