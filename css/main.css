@@ -35,7 +35,7 @@ body{
 .container{
 	clear: both;
 	display: block;
-	max-width: 62.5em;
+	max-width: 90%;
 	margin-left: auto;
 	margin-right: auto;
 	padding-top:8em;
@@ -52,7 +52,9 @@ body{
 }
 
 .header_container{
-	max-width:62.5em;
+	padding-left: 1em;
+	padding-right: 1em;
+	max-width:90%;
 	margin-right: auto;
 	margin-left: auto;
 }
@@ -74,6 +76,20 @@ body{
 	padding-bottom: 1em;
 	background-color: #353535;
 }
+
+.center_container{
+	max-width:100%;
+	text-align: center;
+}
+
+.left li{
+	display: inline-block;
+	width: 25%;
+	text-align: center;
+	margin: -4px;
+}
+.left img{max-width: 100%;}
+	
 
 /* HEADERS & TEXT */
 
@@ -197,13 +213,6 @@ ul li span{
 
 .footertext a{
 	color:#FAFAFA;
-}
-
-.left{
-	width: 13.5em;
-	text-align: center;
-	float: left;
-	margin: 1em;
 }
 
 p{
