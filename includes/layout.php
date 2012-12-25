@@ -27,11 +27,11 @@
 			<div class="header_container">
 				<h1><img src="img/header.png"/><span>Christopher McLean, web developer and designer</span></h1>
 				<ul class="nav">
-					<li><img src=""/><a href="index.php">home</a></li>
-					<li><img src=""/><a href="me.php">me</a></li>
-					<li><img src=""/><a href="resume.php">resume</a></li>
-					<li><img src=""/><a href="blog.php">blog</a></li>
-					<li><img src=""/><a href="work.php">work</a></li>
+					<li><a href="index.php" class="house_icon">home</a></li>
+					<li><a href="me.php" class="me_icon">me</a></li>
+					<li><a href="resume.php" class="resume_icon">resume</a></li>
+					<li><a href="blog.php" class="blog_icon">blog</a></li>
+					<li><a href="work.php" class="work_icon">work</a></li>
 				</ul>
 				<div class="clear"></div>
 			</div>

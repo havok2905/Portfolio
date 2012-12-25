@@ -78,6 +78,7 @@ body{
 	margin: -4px;
 }
 .left img{max-width: 100%;}
+.full{width:100%;}
 	
 
 /* HEADERS & TEXT */
@@ -94,23 +95,17 @@ h1 img{
 }
 
 h2{
-	font-family: Arial;
-	font-size: 1.125em;
-	color: #656565;
-	letter-spacing: -0.05em;
-}
-
-h3{
 	font-family: ChapPro;
 	font-size: 2em;
 	color: #4490A4;
 	letter-spacing: -0.05em;
 	margin-bottom: 0.5em;
+	margin-top: 0.5em;
 }
-h3 a{text-decoration: underline; color:#4490A4;}
-h3 a:hover{color:#999999;}
+h2 a{text-decoration: underline; color:#4490A4;}
+h2 a:hover{color:#999999;}
 
-h4{
+h3{
 	font-family: Arial;
 	font-size: 1.3em;
 	font-weight: 900;
@@ -118,14 +113,14 @@ h4{
 	margin-top: 0.5em;
 	margin-bottom: 0.5em;
 }
-h4.resume{
+h3.resume{
 	font-family: ChapPro;
 	font-weight: bold;
 	font-size: 1.5em;
 	color: #333333;
 }
 
-h5{
+h4{
 	font-family: ChapPro;
 	font-weight: bold;
 	font-size: 1em;
@@ -148,16 +143,17 @@ ul.nav{
 	position: relative;
 	top:2.2em;
 }
-ul.nav li{
-	display: inline;
-	margin-right:2.5em;
-}
+ul.nav li{display: inline;}
 ul.nav a{
+	padding-top: 3.5em;
+	padding-right: 0.6em;
+	padding-left: 0.6em;
 	font-family: Arial;
 	font-size: 1.125em;
 	color: #656565;
 	letter-spacing: -0.05em;
 }
+ul.nav a:hover{color: #DDDDDD;}
 
 .markedlist li{
 	list-style-type: disc;
@@ -178,16 +174,10 @@ ul.nav a{
 	color: #FFFFFF;
 	font-family: Gandhi;
 }
-.floatinglist li a:hover{
-	text-decoration: underline;
-}
+.floatinglist li a:hover{text-decoration: underline;}
 
-.footertext{
-	color:#FAFAFA;
-}
-.footertext a{
-	color:#FAFAFA;
-}
+.footertext{color:#FAFAFA;}
+.footertext a{color:#FAFAFA;}
 
 p{
 	margin-bottom: 1.625em;
@@ -234,8 +224,15 @@ input{
 	text-align: center;
 }
 
-/*QUERIES*/
-@media only screen and (max-width: 1060px){
+/*BACKGROUNDS*/
+.house_icon:hover{background: url('../img/house.png') no-repeat center;}
+.me_icon:hover{background: url('../img/me.png') no-repeat center;}
+.resume_icon:hover{background: url('../img/case.png') no-repeat center;}
+.blog_icon:hover{background: url('../img/blog.png') no-repeat center;}
+.work_icon:hover{background: url('../img/code.png') no-repeat center;}
+
+/*BEGIN TABLET LAYOUT*/
+@media only screen and (max-width: 945px){
 	.container{
 		padding-top: 9em;
 	}
@@ -247,6 +244,12 @@ input{
 	ul.nav{
 		float: none;
 		position: static;
+	}
+	ul.nav a{
+		padding-top: 0;
+	}
+	ul.nav a:hover{
+		background: url("");
 	}
 }
 

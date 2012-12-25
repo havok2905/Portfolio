@@ -4,7 +4,8 @@
 	require_once("includes/layout.php");
 	echo Layout::header("Home");
 ?>
-<h3>What I Can Do</h3>
+<img src="http://placekitten.com/1100/400" class="full"/>
+<h2>What I Can Do</h3>
 <div class="center_container">
 	<ul class="left">
 		<li><a href=""><img src="img/laptop.png"/><p>Development</p></a></li>
@@ -15,7 +16,7 @@
 	<div class="clear"></div>
 </div>
 <div>
-	<h3>Inside Of My Head</h3>
+	<h2>Inside Of My Head</h3>
 </div>
 <div>
 </div>
