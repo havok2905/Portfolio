@@ -59,17 +59,6 @@ body{
 	margin-left: auto;
 }
 
-.contact_container{
-	position:relative;
-	top:-1em;
-	display: inline-block;
-}
-
-.contact_sub_container{
-	margin-top: 1em;
-	margin-right: 2em;
-}
-
 .footer{
 	margin-top: 2em; 
 	padding-top: 1em;
@@ -93,19 +82,15 @@ body{
 
 /* HEADERS & TEXT */
 
-.headers{float: left;}
-
 h1{
-	font-family: ChapPro;
-	font-size: 3em;
-	color: #4490A4;
-	letter-spacing: -0.05em;
+	display:inline;
+	width:40%;
 }
-
+h1 span{display:none;}
 h1 img{
+	max-width: 100%;
 	margin-right: 0.25em;
-	vertical-align: text-top;
-
+	display: inline;
 }
 
 h2{
@@ -113,9 +98,6 @@ h2{
 	font-size: 1.125em;
 	color: #656565;
 	letter-spacing: -0.05em;
-	position: relative;
-	left:17.375em;
-	top:-1.25em;
 }
 
 h3{
@@ -155,31 +137,26 @@ a{
 	color: #000;
 }
 
-ul li
-{
-	margin-bottom: 0.5em;
+ul li{margin-bottom: 0.5em;}
+ul li span{
+	display: none;
 }
 
 ul.nav{
+	display: inline-block;
 	float: right;
 	position: relative;
-	top:3.3em;
+	top:2.2em;
 }
-
 ul.nav li{
-	float: left;
+	display: inline;
 	margin-right:2.5em;
 }
-
 ul.nav a{
 	font-family: Arial;
 	font-size: 1.125em;
 	color: #656565;
 	letter-spacing: -0.05em;
-}
-
-ul li span{
-	display: none;
 }
 
 .markedlist li{
@@ -197,12 +174,10 @@ ul li span{
 	left: 85%;
 	box-shadow: #666 0px 1px 5px;
 }
-
 .floatinglist li a{
 	color: #FFFFFF;
 	font-family: Gandhi;
 }
-
 .floatinglist li a:hover{
 	text-decoration: underline;
 }
@@ -210,7 +185,6 @@ ul li span{
 .footertext{
 	color:#FAFAFA;
 }
-
 .footertext a{
 	color:#FAFAFA;
 }
@@ -259,6 +233,23 @@ input{
 	display: block;
 	text-align: center;
 }
+
+/*QUERIES*/
+@media only screen and (max-width: 1060px){
+	.container{
+		padding-top: 9em;
+	}
+
+	.header_container{
+		text-align: center;
+	}
+
+	ul.nav{
+		float: none;
+		position: static;
+	}
+}
+
 
 
 

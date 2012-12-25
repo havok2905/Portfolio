@@ -16,6 +16,7 @@
 <html>
 	<head> 
 		<title>McLean Web Development and Design $title</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
 		<link rel="stylesheet" type="text/css" href="css/main.css"/>
 		<script type="text/javascript" src="js/jquery.js"></script>
@@ -24,10 +25,7 @@
 	<body>
 		<div class="header">
 			<div class="header_container">
-				<div class="headers">
-					<h1><img src="img/icon_thumb.png">Christopher McLean</h1>
-					<h2>web developer &amp; designer</h2>
-				</div>
+				<h1><img src="img/header.png"/><span>Christopher McLean, web developer and designer</span></h1>
 				<ul class="nav">
 					<li><img src=""/><a href="index.php">home</a></li>
 					<li><img src=""/><a href="me.php">me</a></li>
@@ -35,9 +33,9 @@
 					<li><img src=""/><a href="blog.php">blog</a></li>
 					<li><img src=""/><a href="work.php">work</a></li>
 				</ul>
+				<div class="clear"></div>
 			</div>
 		</div>
-		<div class="clear"></div>
 		<div class="container">
 EOT;
 			return $response;
@@ -60,7 +58,6 @@ EOT;
 						<input class="submit" type="submit" name="send" value="send"/>
 					</div>
 				</form>
-				<div class="contact_container">
 					<div class="contact_sub_container">
 						<h4>Follow Me</h4>
 						<ul class="footertext inlinelist">
@@ -78,8 +75,6 @@ EOT;
 							<li>Orlando Florida, 32826</li>
 						</ul>
 					</div>
-					<div class="clear"></div>
-				</div>
 			</div>
 		</div>
 	</body>

@@ -7,9 +7,9 @@
 
 <div>
 	<ul class="floatinglist">
-		<li><a href="">Download PDF</a></li>
-		<li><a href="">Download DOC</a></li>
-		<li><a href="">Download DOCX</a></li>
+		<li><a href="">PDF</a></li>
+		<li><a href="">DOC</a></li>
+		<li><a href="">DOCX</a></li>
 	</ul>
 	<h3>Christopher W. McLean</h3>
 	<ul class="markedlist">
