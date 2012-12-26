@@ -5,7 +5,7 @@
 	echo Layout::header("Home");
 ?>
 <img src="http://placekitten.com/1100/400" class="full"/>
-<h2>What I Can Do</h3>
+<h2>My Services</h3>
 <div class="center_container">
 	<ul class="left">
 		<li><a href="development_lightbox" class="development_lightbox"><img src="img/laptop.png"/><p>Development</p></a></li>

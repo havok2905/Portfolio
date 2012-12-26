@@ -27,7 +27,7 @@
 	<body>
 		<div class="header">
 			<div class="header_container">
-				<h1><img src="img/header.png"/><span>Christopher McLean, web developer and designer</span></h1>
+				<h1><a href="index.php"><img src="img/header.png"/><span>Christopher McLean, web developer and designer</span></a></h1>
 				<ul class="nav">
 					<li><a href="index.php" class="house_icon">home</a></li>
 					<li><a href="me.php" class="me_icon">me</a></li>
