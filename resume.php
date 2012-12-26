@@ -6,9 +6,9 @@
 ?>
 
 <div>
-	<ul class="floatinglist">
-		<li><a href="">PDF</a></li>
-		<li><a href="">DOC</a></li>
+	<ul class="inlinelist">
+		<li><a href="">PDF</a> | </li>
+		<li><a href="">DOC</a> | </li>
 		<li><a href="">DOCX</a></li>
 	</ul>
 	<h2>Christopher W. McLean</h2>

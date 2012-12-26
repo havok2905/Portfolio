@@ -25,7 +25,7 @@ body{
 	width: 100%;
 	color:#333;
 	font-family: Gandhi;
-	line-height: 1.625em;
+	line-height: 1.6875em;
 }
 body *:focus{outline: none;}
 
@@ -161,26 +161,12 @@ ul.nav a:hover{color: #DDDDDD;}
 
 .inlinelist li{display: inline;}
 
-.floatinglist{
-	background-color: #4490A4;
-	padding: 1em;
-	border-radius: 0.5em;
-	position: fixed;
-	left: 85%;
-	box-shadow: #666 0px 1px 5px;
-}
-.floatinglist li a{
-	color: #FFFFFF;
-	font-family: Gandhi;
-}
-.floatinglist li a:hover{text-decoration: underline;}
-
 .footertext{color:#FAFAFA;}
 .footertext a{color:#FAFAFA;}
 
 p{
 	margin-bottom: 1.625em;
-	max-width:42.813em;
+	max-width:50em;
 }
 
 strong{font-weight: bold;}	
