@@ -5,20 +5,22 @@
 	echo Layout::header("Resume");
 ?>
 
-<div>
+<h2>Christopher W. McLean</h2>
+<div class="mx2">
 	<ul class="inlinelist">
 		<li><a href="">PDF</a> | </li>
 		<li><a href="">DOC</a> | </li>
 		<li><a href="">DOCX</a></li>
 	</ul>
-	<h2>Christopher W. McLean</h2>
 	<ul class="markedlist">
 		<li>Address: 1829 Loftway Circle Apartment 1422, Orlando Florida, 32826</li>
 		<li>Phone: 254-424-4921</li>
 		<li>Email: mclean.webdev@gmail.com</li>
 		<li>References available on request</li>
 	</ul>
-	<h2>Education</h2>
+</div>
+<h2>Education</h2>
+<div class="mx2">
 	<ul class="markedlist">
 		<li>University of Central Florida, Orlando Florida</li>
 		<li>Expected Graduation: May 2013</li>
@@ -28,7 +30,9 @@
 		<li>Major GPA: 3.504</li>
 		<li>Deans List Fall 2011 - Present</li>
 	</ul>
-	<h2>Coursework</h2>
+</div>
+<h2>Coursework</h2>
+<div class="mx2">
 	<h3 class="resume">Web Design Workshop</h3>
 	<ul class="markedlist">
 		<li>Title: Front-End Exchange</li>
@@ -40,7 +44,9 @@
 		API hosted on the professor's server. This application will be used by other courses at UCF
 		for exchanging fake credit and fake company stock. 
 	</p>
-	<h2>Employment</h2>
+</div>
+<h2>Employment</h2>
+<div class="mx2">
 	<h3 class="resume">University of Central Florida (May 2012 - Present)<br/> Center For Distributed Learning, Orlando Florida</h3>
 	<p>
 		<strong>Techranger:</strong> Developed and managed accessible course websites for a University with over 50,000 students 
@@ -48,7 +54,6 @@
 		and client-side languages such as PHP, Python, and  JavaScript.  Responsible for presentations on web accessibility 
 		as they pertain to online education.
 	</p>
-	<h4>Projects</h4>
 	<p>
 		<strong>Blended Open Badges:</strong> Built a banner distribution application for the Center of Distributed Learning could use to reward educators for 
 		achievements made in working with Blended Mode Courses. This supports manual distribution through email as well as 
@@ -73,7 +78,9 @@
 		and provided assistance in camp maintenance and inventory. Organized and maintained records of camper’s progress through 
 		the 8 week workshops. Represent the camp in a positive and friendly manner when assisting campers and adult leaders. 
 	</p>
-	<h2>Awards and Honors</h2>
+</div>
+<h2>Awards and Honors</h2>
+<div class="mx2">
 	<ul class="markedlist">
 		<li>Deans List (2011-2013, University of Central Florida)
 		<li>Eagle Scout Award (2009, Boy Scout Troop 33)</li>
@@ -81,7 +88,9 @@
 		<li>NJ Regional Champion (2006 - 2008, FIRST Robotics Team 25)</li>
 		<li>NJ Regional FInalist (2009, FIRST Robotics Team 25)</li>
 	</ul>
-	<h2>Languages, Frameworks, &amp; Software</h2>
+</div>
+<h2>Languages, Frameworks, &amp; Software</h2>
+<div class="mx2">
 	<ul class="markedlist">
 		<li>HTML, XTHML, HTML5, XML</li>
 		<li>CSS</li>
@@ -92,7 +101,9 @@
 		<li>Photoshop, Illustrator</li>
 		<li>Git Version Control</li>
 	</ul>
-	<h2>Skills</h2>
+</div>
+<h2>Skills</h2>
+<div class="mx2">
 	<ul class="markedlist">
 		<li>Experience leading and participating in successful team based projects</li>
 		<li>Understanding of Responsive and Adaptive Design for multiple platforms</li>

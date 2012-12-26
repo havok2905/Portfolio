@@ -77,7 +77,10 @@ body *:focus{outline: none;}
 	margin: -4px;
 }
 .left img{max-width: 100%;}
+
 .full{width:100%;}
+
+.mx2{margin-left:1.5em;}
 	
 
 /* HEADERS & TEXT */
@@ -117,13 +120,6 @@ h3.resume{
 	font-weight: bold;
 	font-size: 1.5em;
 	color: #333333;
-}
-
-h4{
-	font-family: ChapPro;
-	font-weight: bold;
-	font-size: 1em;
-	color: #4490A4;
 }
 
 a{
