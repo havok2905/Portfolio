@@ -217,6 +217,13 @@ input{
 .resume_icon:hover{background: url('../img/case.png') no-repeat center;}
 .blog_icon:hover{background: url('../img/blog.png') no-repeat center;}
 .work_icon:hover{background: url('../img/code.png') no-repeat center;}
+.comment_icon{
+	background: url('../img/blog_thumb.png') no-repeat center; 
+	padding-bottom:0.5em;
+	padding-left:1em;
+	padding-right:1em;
+	color:#FFFFFF;
+}
 
 /*BEGIN TABLET LAYOUT*/
 @media only screen and (max-width: 950px){

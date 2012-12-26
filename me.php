@@ -1,7 +1,7 @@
 <?php
 	namespace Portfolio;
 
-	require_once("includes/layout.php");
+	require_once("includes/bootstrap.php");
 	echo Layout::header("Me");
 ?>
 

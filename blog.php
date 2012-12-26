@@ -1,56 +1,38 @@
 <?php
 	namespace Portfolio;
 
-	require_once("includes/layout.php");
+	require_once("includes/bootstrap.php");
 	echo Layout::header("Blog");
-?>
-<div>
-	<h2>Topics</h2>
-	<ul>
-		<li><a href="">Programming</a></li>
-		<li><a href="">Graphic Design</a></li>
-		<li><a href="">Technology</a></li>
-		<li><a href="">Interactivity</a></li>
-		<li><a href="">miscellaneous</a></li>
-	</ul>
-</div>
-<div>
-	<h2><a href="">Lorem Ipsum Dolor <span>5/29/12</span></a></h2>
-	<p>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac lorem non lectus varius vulputate. 
-		Donec eleifend porta pretium. Pellentesque eu purus non lorem sagittis fringilla vel ut arcu. Ut fermentum 
-		vehicula facilisis. Aliquam bibendum ultricies ipsum, porttitor hendrerit justo sollicitudin vitae. 
-		Curabitur accumsan euismod arcu vitae volutpat. Class aptent taciti sociosqu ad litora torquent per conubia 
-		nostra, per inceptos himenaeos. Mauris nunc sapien, varius quis mattis non, condimentum suscipit massa. 
-		Nunc a nulla ut orci vestibulum suscipit. Pellentesque habitant morbi tristique senectus et netus et 
-		malesuada fames ac turpis egestas.
-	</p>
-</div>
-<div>
-	<h2><a href="">Lorem Ipsum Dolor <span>5/29/12</span></a></h2>
-	<p>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac lorem non lectus varius vulputate. 
-		Donec eleifend porta pretium. Pellentesque eu purus non lorem sagittis fringilla vel ut arcu. Ut fermentum 
-		vehicula facilisis. Aliquam bibendum ultricies ipsum, porttitor hendrerit justo sollicitudin vitae. 
-		Curabitur accumsan euismod arcu vitae volutpat. Class aptent taciti sociosqu ad litora torquent per conubia 
-		nostra, per inceptos himenaeos. Mauris nunc sapien, varius quis mattis non, condimentum suscipit massa. 
-		Nunc a nulla ut orci vestibulum suscipit. Pellentesque habitant morbi tristique senectus et netus et 
-		malesuada fames ac turpis egestas.
-	</p>
-</div>
-<div>
-	<h2><a href="">Lorem Ipsum Dolor <span>5/29/12</span></a></h2>
-	<p>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac lorem non lectus varius vulputate. 
-		Donec eleifend porta pretium. Pellentesque eu purus non lorem sagittis fringilla vel ut arcu. Ut fermentum 
-		vehicula facilisis. Aliquam bibendum ultricies ipsum, porttitor hendrerit justo sollicitudin vitae. 
-		Curabitur accumsan euismod arcu vitae volutpat. Class aptent taciti sociosqu ad litora torquent per conubia 
-		nostra, per inceptos himenaeos. Mauris nunc sapien, varius quis mattis non, condimentum suscipit massa. 
-		Nunc a nulla ut orci vestibulum suscipit. Pellentesque habitant morbi tristique senectus et netus et 
-		malesuada fames ac turpis egestas.
-	</p>
-</div>
 
-<?php
+	$posts = Database::select("blog", array("id","title", "datecreated", "path", "category", "description"));
+	$posts = array_reverse($posts);
+
+	foreach ($posts as $key => $value) 
+	{
+		$id = $value["id"];
+		$title = $value["title"];
+		$datecreated = $value["datecreated"];
+		$path = $value["path"];
+		$category = $value["category"];
+		$description = $value["description"];
+
+		$comments = Database::select("comments", array("id"), array("0"), "postId");
+		$numcomments = 0;
+
+		foreach ($comments as $key => $value) 
+		{
+			$numcomments++;
+		}
+		
+		print("
+			<div>
+				<h2><a href='$path'>$title</a></h2>
+				<p><a href='web'>$category</a> | ".date("m-d-Y",strtotime($datecreated))."</p>
+				<p>$description</p>
+				<span class='comment_icon'>$numcomments</span>
+			</div>
+		");
+	}
+
 	echo Layout::footer();
 ?>
