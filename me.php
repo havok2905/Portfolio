@@ -6,7 +6,7 @@
 ?>
 
 <div>
-	<h3>Welcome To My Corner Of The Internet!</h3>
+	<h2>Welcome To My Corner Of The Internet!</h2>
 	<p>
 		Hi, my name is Christopher McLean and I am both a web developer and a web designer. This means that I
 		solve both programming and artisitc oriented problems as they pertain to the web. Here on my tiny 

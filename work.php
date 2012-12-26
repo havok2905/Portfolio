@@ -7,73 +7,73 @@
 <ul>
 	<li>
 		<a href="">
-			<h3>Lorem Ipsum Dolor</h3>
+			<h2>Lorem Ipsum Dolor</h2>
 			<img src=""/>
 		</a>
 	</li>
 	<li>
 		<a href="">
-			<h3>Lorem Ipsum Dolor</h3>
+			<h2>Lorem Ipsum Dolor</h2>
 			<img src=""/>
 		</a>
 	</li>
 	<li>
 		<a href="">
-			<h3>Lorem Ipsum Dolor</h3>
+			<h2>Lorem Ipsum Dolor</h2>
 			<img src=""/>
 		</a>
 	</li>
 	<li>
 		<a href="">
-			<h3>Lorem Ipsum Dolor</h3>
+			<h2>Lorem Ipsum Dolor</h2>
 			<img src=""/>
 		</a>
 	</li>
 	<li>
 		<a href="">
-			<h3>Lorem Ipsum Dolor</h3>
+			<h2>Lorem Ipsum Dolor</h2>
 			<img src=""/>
 		</a>
 	</li>
 	<li>
 		<a href="">
-			<h3>Lorem Ipsum Dolor</h3>
+			<h2>Lorem Ipsum Dolor</h2>
 			<img src=""/>
 		</a>
 	</li>
 	<li>
 		<a href="">
-			<h3>Lorem Ipsum Dolor</h3>
+			<h2>Lorem Ipsum Dolor</h2>
 			<img src=""/>
 		</a>
 	</li>
 	<li>
 		<a href="">
-			<h3>Lorem Ipsum Dolor</h3>
+			<h2>Lorem Ipsum Dolor</h2>
 			<img src=""/>
 		</a>
 	</li>
 	<li>
 		<a href="">
-			<h3>Lorem Ipsum Dolor</h3>
+			<h2>Lorem Ipsum Dolor</h2>
 			<img src=""/>
 		</a>
 	</li>
 	<li>
 		<a href="">
-			<h3>Lorem Ipsum Dolor</h3>
+			<h2>Lorem Ipsum Dolor</h2>
 			<img src=""/>
 		</a>
 	</li>
 	<li>
 		<a href="">
-			<h3>Lorem Ipsum Dolor</h3>
+			<h2>Lorem Ipsum Dolor</h2>
 			<img src=""/>
 		</a>
 	</li>
 	<li>
 		<a href="">
-			<h3>Lorem Ipsum Dolor</h3>
+			<h2>Lorem Ipsum Dolor</h2>
 			<img src=""/>
 		</a>
 	</li>

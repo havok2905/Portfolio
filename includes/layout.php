@@ -17,6 +17,7 @@
 	<head> 
 		<title>McLean Web Development and Design $title</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="img/icon_thumb.png"/>
 		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
 		<link rel="stylesheet" type="text/css" href="css/main.css"/>
 		<link rel="stylesheet" type="text/css" href="js/juular/lightbox.css"/>
@@ -50,7 +51,7 @@ EOT;
 		</div>
 		<div class="footer">
 			<div class="header_container">
-				<h3>Send Me A Message!</h3>
+				<h2>Send Me A Message!</h2>
 				<form name="email" action="" method="post">
 					<textarea name="message" class="styledform"></textarea>
 					<div class="input_container">
@@ -61,15 +62,15 @@ EOT;
 					</div>
 				</form>
 					<div class="contact_sub_container">
-						<h4>Follow Me</h4>
+						<h3>Follow Me</h3>
 						<ul class="footertext inlinelist">
-							<li><a href="https://plus.google.com/u/0/108287038105459970762/posts"><img src="img/googlethumb.png"/><span>google+</span></a></li>
-							<li><a href="https://github.com/havok2905"><img src="img/gitthumb.png"/><span>github</span></a></li>
-							<li><a href="http://www.linkedin.com/pub/christopher-mclean/23/261/789"><img src="img/linkedthumb.png"></img><span>linkedin</span></a></li>
+							<li><a target="_blank" href="https://plus.google.com/u/0/108287038105459970762/posts"><img src="img/googlethumb.png"/><span>google+</span></a></li>
+							<li><a target="_blank" href="https://github.com/havok2905"><img src="img/gitthumb.png"/><span>github</span></a></li>
+							<li><a target="_blank" href="http://www.linkedin.com/pub/christopher-mclean/23/261/789"><img src="img/linkedthumb.png"></img><span>linkedin</span></a></li>
 						</ul>
 					</div>
 					<div class="contact_sub_container">
-						<h4>Contact Info</h4>
+						<h3>Contact Info</h3>
 						<ul class="footertext">
 							<li>254-424-4921</li>
 							<li>mclean.webdev@gmail.com</li>
