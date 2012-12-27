@@ -3,45 +3,30 @@ $(document).ready(function()
 	var dev = {
       	"class"      : "development_lightbox",
             "content"    : "js/juular/404.php",
-            "width"      : 500,
-            "height"     : 200,
-            "exitButton" : true, 
-            "moveable"   : false,
-            "params"	 : {name:"Test"}
+            "width"      : 80,
+            "exitButton" : true
 	};
 
       var mob = {
             "class"      : "mobile_lightbox",
             "content"    : "js/juular/404.php",
-            "width"      : 500,
-            "height"     : 200,
-            "exitButton" : true, 
-            "moveable"   : false,
-            "params"     : {name:"Test"}
+            "width"      : 80,
+            "exitButton" : true
       };
 
       var des = {
             "class"      : "design_lightbox",
             "content"    : "js/juular/404.php",
-            "width"      : 500,
-            "height"     : 200,
-            "exitButton" : true, 
-            "moveable"   : false,
-            "params"     : {name:"Test"}
+            "width"      : 80,
+            "exitButton" : true
       };
 
       var ity = {
             "class"      : "interactivity_lightbox",
             "content"    : "js/juular/404.php",
-            "width"      : 500,
-            "height"     : 200,
-            "exitButton" : true, 
-            "moveable"   : false,
-            "params"     : {name:"Test"}
+            "width"      : 80,
+            "exitButton" : true
       };
-
-
-
 
       $(".development_lightbox").juular(dev);
       $(".mobile_lightbox").juular(mob);

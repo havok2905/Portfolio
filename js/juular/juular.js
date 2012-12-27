@@ -11,7 +11,6 @@
                 "class"      : "default",
                 "content"    : "404.php",
                 "width"      : 600,
-                "height"     : 400,
                 "exitButton" : true, 
                 "moveable"   : false,
                 "params"     : {}
@@ -30,14 +29,13 @@
             $("." + container_class).append('<div class="lightbox_content"></div>');
 
             //set lightbox dimmensions and position it accordingly
-            $("." + container_class).css({"width":settings.width + "px"});
-            $("." + container_class).css({"height":settings.height + "px"});
+            $("." + container_class).css({"width":settings.width + "%"});
            
             var padding = $("." + container_class).css("padding");
             padding = padding.slice(0, padding.length - 2);
             
-            $("." + container_class).css({"margin-left":(settings.width/-2) - padding + "px"});
-
+            $("." + container_class).css({"margin-left":((100-settings.width)/2) + "%"});
+            
             //insert content into lightbox
             $.post(settings.content, settings.params, function(data)
             {

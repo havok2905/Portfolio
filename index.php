@@ -25,7 +25,7 @@
 	$description = $posts[0]['description'];
 
 	print("
-		<h3 class='resume'><a href='$path'>$title</a></h3>
+		<h3 class='resume'><a href='$path'>NEW! $title</a></h3>
 		<p>$description</p>
 	");
 ?>
