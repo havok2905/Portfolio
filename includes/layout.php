@@ -70,7 +70,7 @@ EOT;
 						</ul>
 					</div>
 					<div class="contact_sub_container">
-						<h3>Contact Info</h3>
+						<h3>Contact Me</h3>
 						<ul class="footertext">
 							<li>254-424-4921</li>
 							<li>mclean.webdev@gmail.com</li>

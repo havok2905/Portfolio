@@ -27,7 +27,7 @@
 		print("
 			<div>
 				<h2><a href='$path'>$title</a></h2>
-				<p>$category | ".date("m-d-Y",strtotime($datecreated))."</p>
+				<h3 class='resume'>$category <span>".date("m-d-Y",strtotime($datecreated))."</span></h3>
 				<p>$description</p>
 				<span class='comment_icon'>$numcomments</span>
 			</div>

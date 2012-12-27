@@ -15,9 +15,20 @@
 	</ul>
 	<div class="clear"></div>
 </div>
-<div>
-	<h2>Inside Of My Head</h3>
-</div>
+<h2>Inside Of My Head</h2>
+<?php
+	$posts = Database::select("blog", array("id","title", "datecreated", "path", "category", "description"));
+	$posts = array_reverse($posts);
+
+	$title 		 = $posts[0]['title'];
+	$path 		 = $posts[0]['path'];
+	$description = $posts[0]['description'];
+
+	print("
+		<h3 class='resume'><a href='$path'>$title</a></h3>
+		<p>$description</p>
+	");
+?>
 
 
 <?php

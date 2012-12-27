@@ -5,7 +5,7 @@
 	echo Layout::header("Resume");
 ?>
 
-<h2>Resume for Christopher W. McLean</h2>
+<h2>Christopher W. McLean</h2>
 <div class="mx2">
 	<h3 class="resume">Downloads</h3>
 	<ul class="inlinelist">
@@ -23,8 +23,8 @@
 </div>
 <h2>Education</h2>
 <div class="mx2">
+	<h3 class="resume">University of Central Florida</h3>
 	<ul class="markedlist">
-		<li>University of Central Florida, Orlando Florida</li>
 		<li>Expected Graduation: May 2013</li>
 		<li>Bachelor of Arts in Digital Media</li>
 		<li>Ceoncentration: Web Design</li>
@@ -33,25 +33,11 @@
 		<li>Deans List Fall 2011 - Present</li>
 	</ul>
 </div>
-<h2>Coursework</h2>
-<div class="mx2">
-	<h3 class="resume">Web Design Workshop</h3>
-	<ul class="markedlist">
-		<li>Title: Front-End Exchange</li>
-		<li>Role: PHP Developer/Project Manager</li>
-		<li>Technologies: HTML, CSS, JavaScript, PHP, Dr. Moshell's API</li>
-	</ul>
-	<p>
-		<strong>Responsibilites:</strong> As a team, develop and test a responsive mobile banking application using a provided 
-		API hosted on the professor's server. This application will be used by other courses at UCF
-		for exchanging fake credit and fake company stock. 
-	</p>
-</div>
 <h2>Employment</h2>
 <div class="mx2">
-	<h3 class="resume">University of Central Florida (May 2012 - Present)<br/> Center For Distributed Learning, Orlando Florida</h3>
+	<h3 class="resume">University of Central Florida (May 2012 - Present)<br/> Center For Distributed Learning, Techranger</h3>
 	<p>
-		<strong>Techranger:</strong> Developed and managed accessible course websites for a University with over 50,000 students 
+		Developed and managed accessible course websites for a University with over 50,000 students 
 		using semantic markup and CSS. Worked on internal web applications to benefit the department using server-side 
 		and client-side languages such as PHP, Python, and  JavaScript.  Responsible for presentations on web accessibility 
 		as they pertain to online education.
@@ -83,8 +69,12 @@
 </div>
 <h2>Awards and Honors</h2>
 <div class="mx2">
+	<h3 class="resume">University of Central Florida</h3>
 	<ul class="markedlist">
-		<li>Deans List (2011-2013, University of Central Florida)
+		<li>Deans List (2011-2013, University of Central Florida)</li>
+	</ul>
+	<h3 class="resume">Extra Curricular</h3>
+	<ul class="markedlist">
 		<li>Eagle Scout Award (2009, Boy Scout Troop 33)</li>
 		<li>World Finalist (2006, FIRST Robotics Team 25)</li>
 		<li>NJ Regional Champion (2006 - 2008, FIRST Robotics Team 25)</li>
@@ -93,6 +83,7 @@
 </div>
 <h2>Languages, Frameworks, &amp; Software</h2>
 <div class="mx2">
+	<h3 class="resume">Programming</h3>
 	<ul class="markedlist">
 		<li>HTML, XTHML, HTML5, XML</li>
 		<li>CSS</li>
@@ -100,18 +91,26 @@
 		<li>PHP, Fuel, MySQL</li>
 		<li>Java, Android</li>
 		<li>Actionscript, Flash</li>
-		<li>Photoshop, Illustrator</li>
 		<li>Git Version Control</li>
+	</ul>
+	<h3 class="resume">Software</h3>
+	<ul class="markedlist">
+		<li>Photoshop, Illustrator</li>
+		<li>3D Studio Max, Maya</li>
 	</ul>
 </div>
 <h2>Skills</h2>
 <div class="mx2">
+	<h3 class="resume">Leadership</h3>
 	<ul class="markedlist">
 		<li>Experience leading and participating in successful team based projects</li>
+	</ul>
+	<h3 class="resume">Development</h3>
+	<ul class="markedlist">
 		<li>Understanding of Responsive and Adaptive Design for multiple platforms</li>
 		<li>Can utilize Object Oriented Design in software development</li>
 		<li>Understanding of how to design database schema</li>
-		<li>Properly utilization and documentation semantic HTML and Web Accessibility</li>
+		<li>Proper understanding of accessible web practices</li>
 	</ul>
 </div>
 
