@@ -78,6 +78,7 @@ EOT;
 							<li>Orlando Florida, 32826</li>
 						</ul>
 					</div>
+					<div class="clear"></div>
 			</div>
 		</div>
 	</body>

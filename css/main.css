@@ -70,6 +70,11 @@ body *:focus{outline: none;}
 	text-align: center;
 }
 
+.contact_sub_container{
+	float: left;
+	margin-right: 2em;
+}
+
 .left li{
 	display: inline-block;
 	width: 25%;
@@ -208,7 +213,7 @@ input{
 	text-align: center;
 }
 
-/*BACKGROUNDS*/
+/* BACKGROUNDS */
 .house_icon:hover{background: url('../img/house.png') no-repeat center;}
 .me_icon:hover{background: url('../img/me.png') no-repeat center;}
 .resume_icon:hover{background: url('../img/case.png') no-repeat center;}
@@ -222,28 +227,26 @@ input{
 	color:#FFFFFF;
 }
 
-/*BEGIN TABLET LAYOUT*/
+/* BEGIN TABLET LAYOUT */
 @media only screen and (max-width: 950px){
-	.container{
-		padding-top: 9em;
-	}
+	.container{padding-top: 9em;}
+	
+	.header_container{text-align: center;}
 
-	.header_container{
-		text-align: center;
+	.contact_sub_container{
+		float: none;
+		margin-right: 0em;
 	}
 
 	ul.nav{
 		float: none;
 		position: static;
 	}
-	ul.nav a{
-		padding-top: 0;
-	}
-	ul.nav a:hover{
-		background: url("");
-	}
+	ul.nav a{padding-top: 0;}
+	ul.nav a:hover{background: url("");}
 }
 
+/* BEGIN PHONE LAYOUT */
 @media only screen and (max-width: 550px){
 	h2{font-size: 2em;}
 }
