@@ -10,8 +10,8 @@
 .lightbox_container{
 	position:absolute;
 	z-index:2;
-	width:600px;
-	height:400px;
+	width:70%;
+	height:50%;
 	left:50%;
 	border-radius: 10px;
 	box-shadow: 0px 3px 10px #000000;

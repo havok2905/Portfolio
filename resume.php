@@ -5,13 +5,15 @@
 	echo Layout::header("Resume");
 ?>
 
-<h2>Christopher W. McLean</h2>
+<h2>Resume for Christopher W. McLean</h2>
 <div class="mx2">
+	<h3 class="resume">Downloads</h3>
 	<ul class="inlinelist">
-		<li><a href="">PDF</a> | </li>
-		<li><a href="">DOC</a> | </li>
-		<li><a href="">DOCX</a></li>
+		<li><a href=""><img src="img/pdf.png" alt="pdf icon"/></a></li>
+		<li><a href=""><img src="img/doc.png" alt="doc icon"/></a></li>
+		<li><a href=""><img src="img/docx.png" alt="docx icon"/></a></li>
 	</ul>
+	<h3 class="resume">Contacts</h3>
 	<ul class="markedlist">
 		<li>Address: 1829 Loftway Circle Apartment 1422, Orlando Florida, 32826</li>
 		<li>Phone: 254-424-4921</li>

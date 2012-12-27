@@ -98,7 +98,8 @@ h1 img{
 
 h2{
 	font-family: ChapPro;
-	font-size: 2em;
+	font-size:3em;
+	line-height: 1em;
 	color: #4490A4;
 	letter-spacing: -0.05em;
 	margin-bottom: 0.5em;
@@ -241,6 +242,10 @@ input{
 	ul.nav a:hover{
 		background: url("");
 	}
+}
+
+@media only screen and (max-width: 550px){
+	h2{font-size: 2em;}
 }
 
 

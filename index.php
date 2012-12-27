@@ -8,10 +8,10 @@
 <h2>My Services</h3>
 <div class="center_container">
 	<ul class="left">
-		<li><a href="development_lightbox" class="development_lightbox"><img src="img/laptop.png"/><p>Development</p></a></li>
-		<li><a href="mobile_lightbox" class="mobile_lightbox"><img src="img/phone.png"/><p>Mobile</p></a></li>
-		<li><a href="design_lightbox" class="design_lightbox"><img src="img/design.png"/><p>Design</p></a></li>
-		<li><a href="interactivity_lightbox" class="interactivity_lightbox"><img src="img/graph.png"/><p>Interactivity</p></a></li>
+		<li><a href="development_lightbox" class="development_lightbox"><img src="img/laptop.png" alt="laptop icon"/><p>Development</p></a></li>
+		<li><a href="mobile_lightbox" class="mobile_lightbox"><img src="img/phone.png" alt="phone icon"/><p>Mobile</p></a></li>
+		<li><a href="design_lightbox" class="design_lightbox"><img src="img/design.png" alt="layout icon"/><p>Design</p></a></li>
+		<li><a href="interactivity_lightbox" class="interactivity_lightbox"><img src="img/graph.png" alt="interactive graph example icon"/><p>Interactivity</p></a></li>
 	</ul>
 	<div class="clear"></div>
 </div>
