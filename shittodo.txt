@@ -1,0 +1,20 @@
+1. Landing personal graphic
+2. Fix Juular scroll top functions to match IE and Firefox
+3. Fix Failing Font Face in IE
+4. Get image for about page
+5. Fix bad markup to make semantic
+6. Design Work Page
+7. Restrip higher res header image
+8. Proofread and Rewrite copy
+9. Develop JS animations
+10. Develop advanced hover events
+11. Strip email validation functions from Tux site
+12. Develop blogging comment system
+13. Build lightbox content for index.html
+14. Build robots.txt
+15. Incorperate Google Analytics
+16. Register Domain
+17. Acquire Hosting
+18. Fix Padding Issue in Juular.js
+
+

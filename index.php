@@ -8,10 +8,30 @@
 <h2>My Services</h3>
 <div class="center_container">
 	<ul class="left">
-		<li><a href="development_lightbox" class="development_lightbox"><img src="img/laptop.png" alt="laptop icon"/><p>Development</p></a></li>
-		<li><a href="mobile_lightbox" class="mobile_lightbox"><img src="img/phone.png" alt="phone icon"/><p>Mobile</p></a></li>
-		<li><a href="design_lightbox" class="design_lightbox"><img src="img/design.png" alt="layout icon"/><p>Design</p></a></li>
-		<li><a href="interactivity_lightbox" class="interactivity_lightbox"><img src="img/graph.png" alt="interactive graph example icon"/><p>Interactivity</p></a></li>
+		<li>
+			<a href="development_lightbox" class="development_lightbox">
+				<img src="img/laptop.png" alt="laptop icon"/>
+				<h3 class="resume">Development</h3>
+			</a>
+		</li>
+		<li>
+			<a href="mobile_lightbox" class="mobile_lightbox">
+				<img src="img/phone.png" alt="phone icon"/>
+				<h3 class="resume">Mobile</h3>
+			</a>
+		</li>
+		<li>
+			<a href="design_lightbox" class="design_lightbox">
+				<img src="img/design.png" alt="layout icon"/>
+				<h3 class="resume">Design</h3>
+			</a>
+		</li>
+		<li>
+			<a href="interactivity_lightbox" class="interactivity_lightbox">
+				<img src="img/graph.png" alt="interactive graph example icon"/>
+				<h3 class="resume">Interactivity</h3>
+			</a>
+		</li>
 	</ul>
 	<div class="clear"></div>
 </div>
@@ -25,7 +45,7 @@
 	$description = $posts[0]['description'];
 
 	print("
-		<h3 class='resume'><a href='$path'>NEW! $title</a></h3>
+		<h3 class='resume'><a href='$path' class='underline'>NEW! $title</a></h3>
 		<p>$description</p>
 	");
 ?>

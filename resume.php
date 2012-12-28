@@ -5,14 +5,19 @@
 	echo Layout::header("Resume");
 ?>
 
-<h2>Christopher W. McLean</h2>
+<h2>Resume for Christopher W. McLean</h2>
 <div class="mx2">
 	<h3 class="resume">Downloads</h3>
 	<ul class="inlinelist">
-		<li><a href=""><img src="img/pdf.png" alt="pdf icon"/></a></li>
-		<li><a href=""><img src="img/doc.png" alt="doc icon"/></a></li>
-		<li><a href=""><img src="img/docx.png" alt="docx icon"/></a></li>
+		<li><a href="resume/ChristopherMcLeanResume.pdf" target="_blank"><img src="img/pdf.png" alt="pdf icon"/></a></li>
+		<li><a href="resume/ChristopherMcLeanResume.doc"><img src="img/doc.png" alt="doc icon"/></a></li>
+		<li><a href="resume/ChristopherMcLeanResume.docx"><img src="img/docx.png" alt="docx icon"/></a></li>
 	</ul>
+	<h3 class="resume">Objective</h3>
+	<p>
+		Seeking a position as a web professional working with scripting languages for the web
+		as well as design principles as they pertain to web design.
+	</p>
 	<h3 class="resume">Contacts</h3>
 	<ul class="markedlist">
 		<li>Address: 1829 Loftway Circle Apartment 1422, Orlando Florida, 32826</li>
@@ -28,8 +33,8 @@
 		<li>Expected Graduation: May 2013</li>
 		<li>Bachelor of Arts in Digital Media</li>
 		<li>Ceoncentration: Web Design</li>
-		<li>Cumulative GPA: 3.274</li>
-		<li>Major GPA: 3.504</li>
+		<li>Cumulative GPA: 3.31</li>
+		<li>Major GPA: 3.61</li>
 		<li>Deans List Fall 2011 - Present</li>
 	</ul>
 </div>
@@ -37,80 +42,59 @@
 <div class="mx2">
 	<h3 class="resume">University of Central Florida (May 2012 - Present)<br/> Center For Distributed Learning, Techranger</h3>
 	<p>
-		Developed and managed accessible course websites for a University with over 50,000 students 
-		using semantic markup and CSS. Worked on internal web applications to benefit the department using server-side 
-		and client-side languages such as PHP, Python, and  JavaScript.  Responsible for presentations on web accessibility 
-		as they pertain to online education.
+		Developed and managed accessible course websites for a University with over 50,000 students using semantic markup and CSS. 
+		Worked on internal web applications to benefit the department using server-side and client-side languages such as PHP, Python, 
+		and JavaScript. 
 	</p>
 	<p>
-		<strong>Blended Open Badges:</strong> Built a banner distribution application for the Center of Distributed Learning could use to reward educators for 
-		achievements made in working with Blended Mode Courses. This supports manual distribution through email as well as 
-		through links on web pages, making use of a simple API written in PHP. The badge system used was the Mozilla Open 
-		Badges JavaScript plugin.
+		<strong>Blended Open Badges:</strong> a badge award distribution system for UCF faculty utilizing PHP, JavaScript, and Mozilla Open Badges API.
 	</p>
 	<p>
-		<strong>Learn Programming with Robots:</strong> Building an HTML5 based try JavaScript application that teaches through manipulating digital robots. 
-		It is built utilizing HTML5, JavaScript, and PHP. 
+		<strong>Learn Programming with Robots:</strong> Developing an HTML5 driven "Learn JavaScript" tool to aid new programmers struggling with the topic. 
+		It focuses on allowing students to write simple JavaScript to manipulate digital robots through an in browser code editor.  
 	</p>
 	<p>
-		<strong>Form Manager:</strong> Responsible for Database Architecture and PHP development for a form creation and management tool used by 
-		UCF faculty. This involves recreating an already exisiting application built in coldfusion as well 
-		as expanding on the feature set and usability.
+		<strong>Form Manager:</strong> Developing database architecture and server side code for form creation software to be used by UCF professors 
+		based on an older version built in Cold Fusion.
 	</p>
 	<h3 class="resume">Kittatinny Mountain Scout Reservation (June 2006 - August 2007)<br/> Central NJ Council: Boyscouts of America, Dayton NJ</h3>
 	<p>
-		<strong>Camp Counselor in Training</strong> Learned camp procedures, rules, and workflow. Assisted staff in running workshops and camp maintenance.
+		<strong>Camp Counselor and Instructor</strong> Conducted workshops pertaining to survival skills for approximately 180 campers, 
+		over an 8 week period, and provided assistance in camp maintenance and inventory. Organized and maintained records of camper’s 
+		progress through the 8 week workshops. 
+	</p>
+</div>
+<h2>Activities</h2>
+<div class="mx2">
+	<h3 class="resume">Boy Scouts of America, Troop 33 (2006 - 2009)</h3>
+	<p>
+		<strong>Eagle Scout Award 2009:</strong> Organized and collected over 500 toys for the Marine Corps Toy for Tots program. Maintained records of toy inventory, 
+		collection events, contacts, and scout involvement for use in a final project presentation. 
+	</p>
+	<h3 class="resume">FIRST Robotics Competition (2005 - 2009)</h3>
+	<p>
+		<strong>Scouting Manager:</strong> Provided outlooks on competitors from a strategic, as well as technical perspective. Organized logistics 
+		for 20+ person information gathering team. Conducted team meetings throughout the duration of the competitions.
 	</p>
 	<p>
-		<strong>Camp Counselor and Instructor</strong> Conducted workshops pertaining to survival skills for approximately 180 campers, over an 8 week period, 
-		and provided assistance in camp maintenance and inventory. Organized and maintained records of camper’s progress through 
-		the 8 week workshops. Represent the camp in a positive and friendly manner when assisting campers and adult leaders. 
+		<strong>New Jersey Regional:</strong> 3 time regional champions, competing against approximately 65 teams. 
 	</p>
-</div>
-<h2>Awards and Honors</h2>
-<div class="mx2">
-	<h3 class="resume">University of Central Florida</h3>
-	<ul class="markedlist">
-		<li>Deans List (2011-2013, University of Central Florida)</li>
-	</ul>
-	<h3 class="resume">Extra Curricular</h3>
-	<ul class="markedlist">
-		<li>Eagle Scout Award (2009, Boy Scout Troop 33)</li>
-		<li>World Finalist (2006, FIRST Robotics Team 25)</li>
-		<li>NJ Regional Champion (2006 - 2008, FIRST Robotics Team 25)</li>
-		<li>NJ Regional FInalist (2009, FIRST Robotics Team 25)</li>
-	</ul>
-</div>
-<h2>Languages, Frameworks, &amp; Software</h2>
-<div class="mx2">
-	<h3 class="resume">Programming</h3>
-	<ul class="markedlist">
-		<li>HTML, XTHML, HTML5, XML</li>
-		<li>CSS</li>
-		<li>JavaScript, jQuery, jQuery Mobile</li>
-		<li>PHP, Fuel, MySQL</li>
-		<li>Java, Android</li>
-		<li>Actionscript, Flash</li>
-		<li>Git Version Control</li>
-	</ul>
-	<h3 class="resume">Software</h3>
-	<ul class="markedlist">
-		<li>Photoshop, Illustrator</li>
-		<li>3D Studio Max, Maya</li>
-	</ul>
+	<p>
+		<strong>World Championships:</strong> 1 time world finalist (2nd place), competing against approximately 350 teams. 
+	</p>
 </div>
 <h2>Skills</h2>
 <div class="mx2">
-	<h3 class="resume">Leadership</h3>
 	<ul class="markedlist">
 		<li>Experience leading and participating in successful team based projects</li>
-	</ul>
-	<h3 class="resume">Development</h3>
-	<ul class="markedlist">
-		<li>Understanding of Responsive and Adaptive Design for multiple platforms</li>
-		<li>Can utilize Object Oriented Design in software development</li>
-		<li>Understanding of how to design database schema</li>
-		<li>Proper understanding of accessible web practices</li>
+		<li>Can use GIT version control in team based projects</li>
+		<li>Can develop object oriented software using JavaScript, Java, and PHP</li>
+		<li>Proper understanding of AJAX software development, JQuery, and unobtrusive JavaScript</li>
+		<li>Proper understanding of PHP and designing database schema</li>
+		<li>Proper utilization and documentation of  semantic HTML, XML, and CSS</li>
+		<li>Proper understanding of responsive and adaptive design for dynamic platforms</li>
+		<li>Working knowledge of Photoshop, Illustrator, and Flash/Actionscript3</li>
+		<li>Can use Autodesk 3D Software such as Maya for 3D content creation</li>
 	</ul>
 </div>
 
