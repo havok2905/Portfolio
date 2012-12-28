@@ -2,7 +2,7 @@
 2. Fix Juular scroll top functions to match IE and Firefox
 
 4. Get image for about page
-5. Fix bad markup to make semantic
+
 6. Design Work Page
 7. Restrip higher res header image
 8. Proofread and Rewrite copy

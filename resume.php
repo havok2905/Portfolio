@@ -8,10 +8,10 @@
 <h2>Resume for Christopher W. McLean</h2>
 <div class="mx2">
 	<h3 class="resume">Downloads</h3>
-	<ul class="inlinelist">
-		<li><a href="resume/ChristopherMcLeanResume.pdf" target="_blank"><img src="img/pdf.png" alt="pdf icon"/></a></li>
-		<li><a href="resume/ChristopherMcLeanResume.doc"><img src="img/doc.png" alt="doc icon"/></a></li>
-		<li><a href="resume/ChristopherMcLeanResume.docx"><img src="img/docx.png" alt="docx icon"/></a></li>
+	<ul>
+		<li><a href="resume/ChristopherMcLeanResume.pdf" class="underline" target="_blank">PDF</a></li>
+		<li><a href="resume/ChristopherMcLeanResume.doc" class="underline">DOC</a></li>
+		<li><a href="resume/ChristopherMcLeanResume.docx" class="underline">DOCX</a></li>
 	</ul>
 	<h3 class="resume">Objective</h3>
 	<p>
