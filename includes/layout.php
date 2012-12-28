@@ -55,9 +55,12 @@ EOT;
 				<form name="email" action="" method="post">
 					<textarea name="message" class="styledform"></textarea>
 					<div class="input_container">
-						<input class="styledform" type="text" name="name" placeholder="name"/>
-						<input class="styledform" type="text" name="email" placeholder="email"/>
-						<input class="styledform" type="text" name="subject" placeholder="subject"/>
+						<!--[if IE]><input class="styledform" type="text" name="name" value="name"/><![endif]-->
+						<![if !IE]><input class="styledform" type="text" name="name"  placeholder="name"/><![endif]>
+						<!--[if IE]><input class="styledform" type="text" name="email" value="email"/><![endif]-->
+						<![if !IE]><input class="styledform" type="text" name="email" placeholder="email"/><![endif]>
+						<!--[if IE]><input class="styledform" type="text" name="subject" value="subject"/><![endif]-->
+						<![if !IE]><input class="styledform" type="text" name="subject" placeholder="subject"/><![endif]>
 						<input class="submit" type="submit" name="send" value="send"/>
 					</div>
 				</form>

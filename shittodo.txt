@@ -1,6 +1,6 @@
 1. Landing personal graphic
 2. Fix Juular scroll top functions to match IE and Firefox
-3. Fix Failing Font Face in IE
+
 4. Get image for about page
 5. Fix bad markup to make semantic
 6. Design Work Page
