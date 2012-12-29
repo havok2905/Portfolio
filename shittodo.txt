@@ -4,8 +4,8 @@
 4. Get image for about page
 
 6. Design Work Page
-7. Restrip higher res header image
-8. Proofread and Rewrite copy
+
+
 9. Develop JS animations
 10. Develop advanced hover events
 11. Strip email validation functions from Tux site
