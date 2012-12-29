@@ -9,8 +9,6 @@
 13. Build lightbox content for index.html
 14. Build robots.txt
 15. Incorperate Google Analytics
-16. Register Domain
-17. Acquire Hosting
 18. Fix Padding Issue in Juular.js
 
 
