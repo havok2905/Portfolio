@@ -27,7 +27,6 @@ body{
 	color:#333;
 	font-family: Gandhi;
 	line-height: 1.6875em;
-	-webkit-font-smoothing:antialiased;
 	font-size: 1em;
 }
 body *:focus{outline: none;}
@@ -115,6 +114,7 @@ h2{
 }
 h2 a{text-decoration: underline; color:#4490A4;}
 h2 a:hover{color:#999999;}
+h2 a:active{color:#999999;}
 
 h3{
 	font-family: Arial;
@@ -138,6 +138,9 @@ a{
 a:hover{color:#999999;}
 a:active:{color:#999999;}
 a.underline{text-decoration: underline;}
+
+ol li{list-style: decimal;}
+ol li ul li{list-style: none;}
 
 ul li{margin-bottom: 0.5em;}
 ul li span{display: none;}
@@ -200,11 +203,11 @@ form{
 	color:#FAFAFA;
 }
 .submit:hover{
-	background-color: #000000;
+	background-color: #111111;
 	color:#FAFAFA;
 }
 .submit:active{
-	background-color: #000000;
+	background-color: #111111;
 	color:#FAFAFA;
 }
 

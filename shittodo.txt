@@ -1,11 +1,7 @@
 1. Landing personal graphic
 2. Fix Juular scroll top functions to match IE and Firefox
-
 4. Get image for about page
-
 6. Design Work Page
-
-
 9. Develop JS animations
 10. Develop advanced hover events
 11. Strip email validation functions from Tux site

@@ -21,11 +21,13 @@
 		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
 		<link rel="stylesheet" type="text/css" href="css/main.css"/>
 		<link rel="stylesheet" type="text/css" href="js/juular/lightbox.css"/>
+		<link rel="stylesheet" typer="text/css" href="js/google-code-prettify/prettify.css"/>
 		<script type="text/javascript" src="js/jquery.js"></script>
 		<script type="text/javascript" src="js/juular/juular.js"></script>
+		<script type="text/javascript" src="js/google-code-prettify/prettify.js"/>
 		<script type="text/javascript" src="js/main.js"></script>
 	</head>
-	<body>
+	<body onload="prettyPrint()">
 		<div class="header">
 			<div class="header_container">
 				<h1><a href="index.php"><img src="img/header.png"/><span>Christopher McLean, web developer and designer</span></a></h1>
