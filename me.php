@@ -7,6 +7,7 @@
 
 <h2>Welcome To My Corner Of The Internet!</h2>
 <p>
+	<img src="img/me1o.png" class="meimg"/>
 	Hi, my name is Christopher McLean and I am both a web developer and a web designer. I
 	 hope to introduce you to who I am, what I do, and maybe teach you a little 
 	something about the web.

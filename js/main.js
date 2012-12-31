@@ -1,7 +1,5 @@
-console.log("test2");
 $(window).ready(function()
 {
-      console.log("test");
 	var dev = {
       	"class"      : "development_lightbox",
             "content"    : "js/juular/404.php",
@@ -34,4 +32,22 @@ $(window).ready(function()
       $(".mobile_lightbox").juular(mob);
       $(".design_lightbox").juular(des);
       $(".interactivity_lightbox").juular(ity);
+
+      addEvents();
 });
+
+function addEvents()
+{
+      $(window).scroll(function()
+      {     
+            if($(this).scrollTop() > 0)
+            {
+                 $(".header").css("box-shadow","#666 0px 1px 5px"); 
+            }
+            else
+            {
+                  $(".header").css("box-shadow","none"); 
+            }
+            
+      });
+}

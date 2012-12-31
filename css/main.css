@@ -49,7 +49,6 @@ body *:focus{outline: none;}
 	position: fixed;
 	background-color: #FFFFFF;
 	width:100%;
-	box-shadow: #666 0px 1px 5px;
 }
 
 .header_container{
@@ -130,6 +129,9 @@ h3.resume{
 	font-size: 1.5em;
 	color: #333333;
 }
+h4{
+	font-weight: bold;
+}
 
 a{
 	text-decoration: none;
@@ -179,6 +181,14 @@ p{
 }
 
 strong{font-weight: bold;}	
+
+.meimg{
+	float: left;
+	margin-right:2em;
+	margin-bottom:1em;
+	border-radius: 0.7em;
+	width:30%;
+}
 
 /* FORMS AND INPUTS */
 form{
@@ -268,6 +278,9 @@ input{
 	ul.left h3{font-size: 0.8em;}
 }
 
+@media only screen and (max-width:358px){
+	.meimg{display:none;}
+}
 
 
 
