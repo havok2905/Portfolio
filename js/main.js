@@ -1,5 +1,7 @@
-$(document).ready(function()
+console.log("test2");
+$(window).ready(function()
 {
+      console.log("test");
 	var dev = {
       	"class"      : "development_lightbox",
             "content"    : "js/juular/404.php",

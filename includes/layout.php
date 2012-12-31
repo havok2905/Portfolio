@@ -24,7 +24,7 @@
 		<link rel="stylesheet" typer="text/css" href="js/google-code-prettify/prettify.css"/>
 		<script type="text/javascript" src="js/jquery.js"></script>
 		<script type="text/javascript" src="js/juular/juular.js"></script>
-		<script type="text/javascript" src="js/google-code-prettify/prettify.js"/>
+		<script type="text/javascript" src="js/google-code-prettify/prettify.js"></script>
 		<script type="text/javascript" src="js/main.js"></script>
 	</head>
 	<body onload="prettyPrint()">

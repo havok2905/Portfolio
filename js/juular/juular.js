@@ -83,6 +83,7 @@
 function show(event)
 {
     event.preventDefault();
+    console.log(event);
 
     var container_class = "lightbox_container." + $(this).attr("href");
     

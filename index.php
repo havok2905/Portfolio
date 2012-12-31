@@ -45,7 +45,7 @@
 	$description = $posts[0]['description'];
 
 	print("
-		<h3 class='resume'><a href='$path' class='underline'>NEW! $title</a></h3>
+		<h3 class='resume'><a href='post.php?post=$title' class='underline'>NEW! $title</a></h3>
 		<p>$description</p>
 	");
 ?>
