@@ -83,13 +83,15 @@ body *:focus{outline: none;}
 	margin: -4px;
 }
 .left img{max-width: 100%;}
+.left img:hover{max-width: 60%;}
+.left img:active{max-width: 60%;}
 
 .full{width:100%;}
 
 .mx2{margin-left:1.5em;}
 	
 
-/* HEADERS & TEXT */
+/* HEADERS & TEXT & IMAGES*/
 
 h1{
 	display:inline;
@@ -241,10 +243,15 @@ input{
 
 /* BACKGROUNDS */
 .house_icon:hover{background: url('../img/house.png') no-repeat center;}
+.house_icon:active{background: url('../img/house.png') no-repeat center;}
 .me_icon:hover{background: url('../img/me.png') no-repeat center;}
+.me_icon:active{background: url('../img/me.png') no-repeat center;}
 .resume_icon:hover{background: url('../img/case.png') no-repeat center;}
+.resume_icon:active{background: url('../img/case.png') no-repeat center;}
 .blog_icon:hover{background: url('../img/blog.png') no-repeat center;}
+.blog_icon:active{background: url('../img/blog.png') no-repeat center;}
 .work_icon:hover{background: url('../img/code.png') no-repeat center;}
+.work_icon:active{background: url('../img/code.png') no-repeat center;}
 .comment_icon{
 	background: url('../img/blog_thumb.png') no-repeat center; 
 	padding-bottom:0.5em;
