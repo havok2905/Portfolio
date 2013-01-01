@@ -69,9 +69,9 @@ EOT;
 					<div class="contact_sub_container">
 						<h3>Follow Me</h3>
 						<ul class="footertext inlinelist">
-							<li><a target="_blank" href="https://plus.google.com/u/0/108287038105459970762/posts"><img src="img/googlethumb.png" alt="google plus icon"/><span>google+</span></a></li>
-							<li><a target="_blank" href="https://github.com/havok2905"><img src="img/gitthumb.png" alt="github icon"/><span>github</span></a></li>
-							<li><a target="_blank" href="http://www.linkedin.com/pub/christopher-mclean/23/261/789"><img src="img/linkedthumb.png" alt="linkedin icon"></img><span>linkedin</span></a></li>
+							<li><a target="_blank" href="https://plus.google.com/u/0/108287038105459970762/posts"><img src="img/googlethumb.png" alt="google plus icon" id="google"/><span>google+</span></a></li>
+							<li><a target="_blank" href="https://github.com/havok2905"><img src="img/gitthumb.png" alt="github icon" id="github"/><span>github</span></a></li>
+							<li><a target="_blank" href="http://www.linkedin.com/pub/christopher-mclean/23/261/789"><img src="img/linkedthumb.png" alt="linkedin icon" id="linkedin"></img><span>linkedin</span></a></li>
 						</ul>
 					</div>
 					<div class="contact_sub_container">

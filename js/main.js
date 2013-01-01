@@ -48,6 +48,42 @@ function addEvents()
             {
                   $(".header").css("box-shadow","none"); 
             }
-            
+      });
+
+      $("#submitcomment").click(function(event)
+      {
+            event.preventDefault();
+
+            var text = $("#comment").val();
+            var name = $("#comment_name").val();
+
+            $.post("includes/blogcontroller.php", {comment:text, comment_name:name}, function()
+            {
+                  $("#comment_container").prepend("<p><strong><span>" + name + " says: </span></strong>" + text + "</p>");
+            });
+      });
+
+      $("#google").hover(function()
+      {
+            $("#google").attr("src", "img/googlethumbbw.png");
+      }, function()
+      {
+            $("#google").attr("src", "img/googlethumb.png");
+      });
+
+      $("#github").hover(function()
+      {
+            $("#github").attr("src", "img/gitthumbbw.png");
+      }, function()
+      {
+             $("#github").attr("src", "img/gitthumb.png");
+      });
+
+      $("#linkedin").hover(function()
+      {
+            $("#linkedin").attr("src", "img/linkedthumbbw.png");
+      }, function()
+      {
+            $("#linkedin").attr("src", "img/linkedthumb.png");
       });
 }

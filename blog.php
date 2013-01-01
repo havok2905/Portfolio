@@ -16,7 +16,7 @@
 		$category = $value["category"];
 		$description = $value["description"];
 
-		$comments = Database::select("comments", array("id"), array("0"), "postId");
+		$comments = Database::select("comments", array("id"), array("1"), "postId");
 		$numcomments = 0;
 
 		foreach ($comments as $key => $value) 
