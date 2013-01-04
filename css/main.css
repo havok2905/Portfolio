@@ -93,6 +93,8 @@ body *:focus{outline: none;}
 
 /* HEADERS & TEXT & IMAGES*/
 
+.hidden{display: none;}
+
 h1{
 	display:inline;
 	width:40%;
@@ -108,12 +110,12 @@ h2{
 	font-family: Museo;
 	font-size:2.5em;
 	line-height: 1em;
-	color: #4490A4;
+	color: #18A7DB;
 	letter-spacing: -0.05em;
 	margin-bottom: 0.5em;
 	margin-top: 1em;
 }
-h2 a{text-decoration: underline; color:#4490A4;}
+h2 a{text-decoration: underline; color:#18A7DB;}
 h2 a:hover{color:#999999;}
 h2 a:active{color:#999999;}
 
@@ -185,11 +187,8 @@ p{
 strong{font-weight: bold;}	
 
 .meimg{
-	float: left;
-	margin-right:2em;
-	margin-bottom:1em;
-	border-radius: 8em;
-	width:30%;
+	border-radius: 2em;
+	width:100%;
 }
 
 /* FORMS AND INPUTS */

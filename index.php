@@ -4,7 +4,13 @@
 	require_once("includes/bootstrap.php");
 	echo Layout::header("Home");
 ?>
-<img src="http://placekitten.com/1100/400" class="full"/>
+<img src="img/banner.png" class="full"/>
+<p class="hidden">Hi, My name is Christopher McLean!</p>
+<p class="hidden">"I like to build websites and interactive media and live in sunny Orlando Florida"</p>
+<ul class="hidden">
+	<li>254-424-4921</li>
+	<li>mclean.webdev@gmail.com</li>
+</ul>
 <h2>My Services</h3>
 <div class="center_container">
 	<ul class="left">

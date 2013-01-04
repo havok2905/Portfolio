@@ -5,7 +5,7 @@
 	echo Layout::header("Resume");
 ?>
 
-<h2>Resume for Christopher W. McLean</h2>
+<h2>Resume for Web Design Position</h2>
 <h3 class="resume">Downloads</h3>
 <ul>
 	<li><a href="resume/ChristopherMcLeanResume.pdf" class="underline" target="_blank">PDF</a></li>
