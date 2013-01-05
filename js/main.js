@@ -57,8 +57,9 @@ function addEvents()
             var text = $("#comment").val();
             var name = $("#comment_name").val();
 
-            $.post("includes/blogcontroller.php", {comment:text, comment_name:name}, function()
+            $.post("includes/blogcontroller.php", {comment:text, comment_name:name}, function(data)
             {
+                  console.log(data);
                   $("#comment_container").prepend("<p><strong><span>" + name + " says: </span></strong>" + text + "</p>");
             });
       });
