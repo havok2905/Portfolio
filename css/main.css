@@ -28,6 +28,7 @@ body{
 	font-family: Gandhi;
 	line-height: 1.6875em;
 	font-size: 1em;
+	background-image:url('../img/gray_jean.png');
 }
 body *:focus{outline: none;}
 
@@ -47,8 +48,9 @@ body *:focus{outline: none;}
 .header{
 	padding-top: 1em;
 	position: fixed;
-	background-color: #FFFFFF;
+	background-image:url('../img/gray_jean.png');
 	width:100%;
+	z-index: 0;
 }
 
 .header_container{
@@ -89,6 +91,25 @@ body *:focus{outline: none;}
 .full{width:100%;}
 
 .mx2{margin-left:1.5em;}
+
+.pdf{
+	position: relative;
+	z-index: 0;
+}
+
+.bannercontainer{
+	margin-top: 3em;
+	position:relative;
+	z-index: -1;
+}
+.bannertitle{
+	position: absolute;
+	background-color: #333333;
+}
+.bannertitle a{color:#FFFFFF;}
+.bannertitle h2{margin-left: 1em;}
+
+.shadow{box-shadow: #666 0em 0.5em 1em;}
 	
 
 /* HEADERS & TEXT & IMAGES*/
@@ -110,12 +131,12 @@ h2{
 	font-family: Museo;
 	font-size:2.5em;
 	line-height: 1em;
-	color: #18A7DB;
+	color: #4490A4;
 	letter-spacing: -0.05em;
 	margin-bottom: 0.5em;
 	margin-top: 1em;
 }
-h2 a{text-decoration: underline; color:#18A7DB;}
+h2 a{text-decoration: underline; color:#4490A4;}
 h2 a:hover{color:#999999;}
 h2 a:active{color:#999999;}
 
@@ -191,6 +212,14 @@ strong{font-weight: bold;}
 	width:100%;
 }
 
+.banner{
+	box-shadow: #666 0px 0.5em 1em;
+}
+
+pre{
+	background-color: #FFFFFF;
+}
+
 /* FORMS AND INPUTS */
 form{
 	width:100%;
@@ -243,8 +272,8 @@ input{
 /* BACKGROUNDS */
 .house_icon:hover{background: url('../img/house.png') no-repeat center;}
 .house_icon:active{background: url('../img/house.png') no-repeat center;}
-.me_icon:hover{background: url('../img/me.png') no-repeat center;}
-.me_icon:active{background: url('../img/me.png') no-repeat center;}
+.me_icon:hover{background: url('../img/person.png') no-repeat center;}
+.me_icon:active{background: url('../img/person.png') no-repeat center;}
 .resume_icon:hover{background: url('../img/case.png') no-repeat center;}
 .resume_icon:active{background: url('../img/case.png') no-repeat center;}
 .blog_icon:hover{background: url('../img/blog.png') no-repeat center;}
@@ -276,12 +305,15 @@ input{
 	}
 	ul.nav a{padding-top: 0;}
 	ul.nav a:hover{background: url("");}
+
+	h2{font-size: 2em;}
 }
 
 /* BEGIN PHONE LAYOUT */
 @media only screen and (max-width: 650px){
-	h2{font-size: 2em;}
+	
 	ul.left h3{font-size: 0.8em;}
+	h2{font-size: 1em;}
 }
 
 @media only screen and (max-width:358px){

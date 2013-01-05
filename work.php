@@ -4,80 +4,94 @@
 	require_once("includes/bootstrap.php");
 	echo Layout::header("Work");
 ?>
-<ul>
-	<li>
-		<a href="">
-			<h2>Lorem Ipsum Dolor</h2>
-			<img src=""/>
-		</a>
-	</li>
-	<li>
-		<a href="">
-			<h2>Lorem Ipsum Dolor</h2>
-			<img src=""/>
-		</a>
-	</li>
-	<li>
-		<a href="">
-			<h2>Lorem Ipsum Dolor</h2>
-			<img src=""/>
-		</a>
-	</li>
-	<li>
-		<a href="">
-			<h2>Lorem Ipsum Dolor</h2>
-			<img src=""/>
-		</a>
-	</li>
-	<li>
-		<a href="">
-			<h2>Lorem Ipsum Dolor</h2>
-			<img src=""/>
-		</a>
-	</li>
-	<li>
-		<a href="">
-			<h2>Lorem Ipsum Dolor</h2>
-			<img src=""/>
-		</a>
-	</li>
-	<li>
-		<a href="">
-			<h2>Lorem Ipsum Dolor</h2>
-			<img src=""/>
-		</a>
-	</li>
-	<li>
-		<a href="">
-			<h2>Lorem Ipsum Dolor</h2>
-			<img src=""/>
-		</a>
-	</li>
-	<li>
-		<a href="">
-			<h2>Lorem Ipsum Dolor</h2>
-			<img src=""/>
-		</a>
-	</li>
-	<li>
-		<a href="">
-			<h2>Lorem Ipsum Dolor</h2>
-			<img src=""/>
-		</a>
-	</li>
-	<li>
-		<a href="">
-			<h2>Lorem Ipsum Dolor</h2>
-			<img src=""/>
-		</a>
-	</li>
-	<li>
-		<a href="">
-			<h2>Lorem Ipsum Dolor</h2>
-			<img src=""/>
-		</a>
-	</li>
-</ul>
+<h2>My Collection of Work</h2>
+<div class="center_container">
+	<ul class="left">
+		<li>
+			<a href="development_lightbox" class="development_lightbox shadow">
+				<img src="img/robosimthumb.png" alt="robosim project icon"/>
+				<h3 class="resume">RoboSim</h3>
+			</a>
+		</li>
+		<li>
+			<a href="development_lightbox" class="development_lightbox shadow">
+				<img src="img/robosimthumb.png" alt="robosim project icon"/>
+				<h3 class="resume">RoboSim</h3>
+			</a>
+		</li>
+		<li>
+			<a href="development_lightbox" class="development_lightbox shadow">
+				<img src="img/robosimthumb.png" alt="robosim project icon"/>
+				<h3 class="resume">RoboSim</h3>
+			</a>
+		</li>
+		<li>
+			<a href="development_lightbox" class="development_lightbox shadow">
+				<img src="img/robosimthumb.png" alt="robosim project icon"/>
+				<h3 class="resume">RoboSim</h3>
+			</a>
+		</li>
+	</ul>
+	<div class="clear"></div>
+</div>
+<div class="center_container">
+	<ul class="left">
+		<li>
+			<a href="development_lightbox" class="development_lightbox shadow">
+				<img src="img/robosimthumb.png" alt="robosim project icon"/>
+				<h3 class="resume">RoboSim</h3>
+			</a>
+		</li>
+		<li>
+			<a href="development_lightbox" class="development_lightbox shadow">
+				<img src="img/robosimthumb.png" alt="robosim project icon"/>
+				<h3 class="resume">RoboSim</h3>
+			</a>
+		</li>
+		<li>
+			<a href="development_lightbox" class="development_lightbox shadow">
+				<img src="img/robosimthumb.png" alt="robosim project icon"/>
+				<h3 class="resume">RoboSim</h3>
+			</a>
+		</li>
+		<li>
+			<a href="development_lightbox" class="development_lightbox shadow">
+				<img src="img/robosimthumb.png" alt="robosim project icon"/>
+				<h3 class="resume">RoboSim</h3>
+			</a>
+		</li>
+	</ul>
+	<div class="clear"></div>
+</div>
+<div class="center_container">
+	<ul class="left">
+		<li>
+			<a href="development_lightbox" class="development_lightbox shadow">
+				<img src="img/robosimthumb.png" alt="robosim project icon"/>
+				<h3 class="resume">RoboSim</h3>
+			</a>
+		</li>
+		<li>
+			<a href="development_lightbox" class="development_lightbox shadow">
+				<img src="img/robosimthumb.png" alt="robosim project icon"/>
+				<h3 class="resume">RoboSim</h3>
+			</a>
+		</li>
+		<li>
+			<a href="development_lightbox" class="development_lightbox shadow">
+				<img src="img/robosimthumb.png" alt="robosim project icon"/>
+				<h3 class="resume">RoboSim</h3>
+			</a>
+		</li>
+		<li>
+			<a href="development_lightbox" class="development_lightbox shadow">
+				<img src="img/robosimthumb.png" alt="robosim project icon"/>
+				<h3 class="resume">RoboSim</h3>
+			</a>
+		</li>
+	</ul>
+	<div class="clear"></div>
+</div>
 
 <?php
 	echo Layout::footer();

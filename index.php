@@ -4,7 +4,10 @@
 	require_once("includes/bootstrap.php");
 	echo Layout::header("Home");
 ?>
-<img src="img/banner.png" class="full"/>
+<div class="bannercontainer">
+	<div class="bannertitle full"><h2><a href="#" class="underline">ROBOSIM: Try JavaScript with Robots!</a></h2></div>
+	<img src="img/banner01.png" class="banner full"/>
+</div>
 <p class="hidden">Hi, My name is Christopher McLean!</p>
 <p class="hidden">"I like to build websites and interactive media and live in sunny Orlando Florida"</p>
 <ul class="hidden">
