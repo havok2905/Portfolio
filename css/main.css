@@ -29,6 +29,7 @@ body{
 	line-height: 1.6875em;
 	font-size: 1em;
 	background-image:url('../img/gray_jean.png');
+	word-wrap:break-word;
 }
 body *:focus{outline: none;}
 
@@ -73,6 +74,11 @@ body *:focus{outline: none;}
 	text-align: center;
 }
 
+.center{
+	margin-right: auto;
+	margin-left: auto;
+}
+
 .contact_sub_container{
 	float: left;
 	margin-right: 2em;
@@ -85,8 +91,8 @@ body *:focus{outline: none;}
 	margin: -4px;
 }
 .left img{max-width: 100%; padding: 0}
-.left img:hover{max-width: 60%;}
-.left img:active{max-width: 60%;}
+.left img.shadow:hover{box-shadow: #AAA 0em 0.5em 1em;}
+.left img.shadow:active{box-shadow: #AAA 0em 0.5em 1em;}
 
 .full{width:100%;}
 
@@ -120,9 +126,11 @@ body *:focus{outline: none;}
 	border-radius: 0.5em;
 	max-width:50em;
 }
-.comment_subcontainer p{
-	margin: 0em;
-}
+.comment_subcontainer p{margin: 0em;}
+
+.marginup{margin-top:1em;}
+
+.hidden{display: hidden;}
 	
 
 /* HEADERS & TEXT & IMAGES*/
@@ -179,6 +187,9 @@ a:hover{color:#999999;}
 a:active:{color:#999999;}
 a.underline{text-decoration: underline;}
 
+ul li{max-width: 50em;}
+a{max-width: 50em;}
+
 ol li{list-style: decimal;}
 ol li ul li{list-style: none;}
 
@@ -225,13 +236,19 @@ strong{font-weight: bold;}
 	width:100%;
 }
 
-.banner{
-	box-shadow: #666 0px 0.5em 1em;
+.blogimg{
+	width:100%;
 }
+
+.banner{box-shadow: #666 0px 0.5em 1em;}
 
 pre{
 	background-color: #FFFFFF;
+	max-width: 50em;
+	overflow: none;
 }
+
+
 
 /* FORMS AND INPUTS */
 form{
@@ -320,18 +337,48 @@ input{
 	ul.nav a:hover{background: url("");}
 
 	h2{font-size: 2em;}
+
+	ul.left h3{font-size: 0.8em;}
+
+	pre{font-size: 0.9em;}
 }
 
 /* BEGIN PHONE LAYOUT */
 @media only screen and (max-width: 650px){
-	
-	ul.left h3{font-size: 0.8em;}
 	h2{font-size: 1em;}
+	h3.resume{font-size: 1em;}
+	.bannercontainer{margin-top: 0em;}
+	.input_container{width:100%;}
+	textarea{
+		width: 100%;
+		margin-bottom: 0.5em;
+	}
+	.left.work a{display: inline;}
+	.left.work li{
+		display: block;
+		text-align: center;
+		text-decoration: underline;
+		width: 100%;
+	}
 }
 
-@media only screen and (max-width:358px){
-	.meimg{display:none;}
+@media only screen and (max-width:450px){
+	.meimg{display:hidden;}
+	ul.nav a{
+		font-size: 0.8em;
+	}
+	.bannercontainer{display:none; margin-top: 0em;}
+	.container{padding-top: 1em;}
+	.header{position: static;}
+	.serviceimg{display: none;}
+	.left li{
+		display: block;
+		text-align: left;
+		text-decoration: underline;
+		width: 100%;
+	}
+	.post_container p{display: none;}
+	pre{
+		font-size: 0.7em;
+	}
 }
-
-
-

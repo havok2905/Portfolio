@@ -2,23 +2,24 @@
 	namespace Portfolio;
 	require_once("includes/bootstrap.php");
 
-	$posts = Database::select("blog", array("id","title", "datecreated", "path", "category", "description"), array($_GET["post"]), "title");
-	$title = $posts[0]['title'];
-	$id = $posts[0]["id"];
-	$comments = Database::select("comments", array("id","text", "parentId", "postId", "commentname", "datecreated"), array($id), "postId");
-	$comments = array_reverse($comments);
-
 	date_default_timezone_set("America/New_York");
 	$datetime = date("Y/m/d H:i:s", time());
 
-	$_SESSION["postid"] = $id;
+	$posts = Database::select("blog", array("id","title", "datecreated", "path", "category", "description"), array($_GET["post"]), "title");
 
 	if(!isset($_GET["post"]) || $_GET["post"] == "")
 	{
 		header("Location: blog.php");
 	}
-	else
+	else if(count($posts) != 0)
 	{
+		$title = $posts[0]['title'];
+		$id = $posts[0]["id"];
+		$comments = Database::select("comments", array("id","text", "parentId", "postId", "commentname", "datecreated"), array($id), "postId");
+		$comments = array_reverse($comments);
+
+		$_SESSION["postid"] = $id;
+
 		if(!isset($_GET["submitcomment"]))
 		{
 			$_GET["submitcomment"] = "no comment submitted or javascript enabled";
@@ -70,5 +71,9 @@
 
 		echo("</div>");
 		echo Layout::footer();
+	}
+	else
+	{
+		header("Location: 404.php");
 	}
 ?>

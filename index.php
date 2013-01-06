@@ -18,32 +18,52 @@
 <div class="center_container">
 	<ul class="left">
 		<li>
-			<a href="development_lightbox" class="development_lightbox transshadow">
-				<img src="img/laptop.png" alt="laptop icon"/>
+			<a href="#" class="servicelink" id="developmentlink">
+				<img src="img/laptop.png" class="serviceimg" alt="laptop icon"/>
 				<h3 class="resume">Development</h3>
 			</a>
 		</li>
 		<li>
-			<a href="mobile_lightbox" class="mobile_lightbox transshadow">
-				<img src="img/phone.png" alt="phone icon"/>
+			<a href="#" class="servicelink" id="mobilelink">
+				<img src="img/phone.png" class="serviceimg" alt="phone icon"/>
 				<h3 class="resume">Mobile</h3>
 			</a>
 		</li>
 		<li>
-			<a href="design_lightbox" class="design_lightbox transshadow">
-				<img src="img/design.png" alt="layout icon"/>
+			<a href="#" class="servicelink" id="designlink">
+				<img src="img/design.png" class="serviceimg" alt="layout icon"/>
 				<h3 class="resume">Design</h3>
 			</a>
 		</li>
 		<li>
-			<a href="interactivity_lightbox" class="interactivity_lightbox transshadow">
-				<img src="img/graph.png" alt="interactive graph example icon"/>
+			<a href="#" class="servicelink" id="interactivitylink">
+				<img src="img/graph.png" class="serviceimg" alt="interactive graph example icon"/>
 				<h3 class="resume">Interactivity</h3>
 			</a>
 		</li>
 	</ul>
-	<div class="clear"></div>
 </div>
+<p id="developmentpar" class="center marginup hidden servicepar">
+	Hello World Hello World Hello World Hello World Hello World
+	Hello World Hello World Hello World Hello World Hello World
+	Hello World Hello World Hello World Hello World Hello World
+</p>
+<p id="mobilepar" class="center marginup hidden servicepar">
+	Hello World Hello World Hello World Hello World Hello World
+	Hello World Hello World Hello World Hello World Hello World
+	Hello World Hello World Hello World Hello World Hello World
+</p>
+<p id="designpar" class="center marginup hidden servicepar">
+	Hello World Hello World Hello World Hello World Hello World
+	Hello World Hello World Hello World Hello World Hello World
+	Hello World Hello World Hello World Hello World Hello World
+</p>
+<p id="interactivitypar" class="center marginup hidden servicepar">
+	Hello World Hello World Hello World Hello World Hello World
+	Hello World Hello World Hello World Hello World Hello World
+	Hello World Hello World Hello World Hello World Hello World
+</p>
+<div class="clear"></div>
 <h2>Inside Of My Head</h2>
 <?php
 	$posts = Database::select("blog", array("id","title", "datecreated", "path", "category", "description"));

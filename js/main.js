@@ -1,38 +1,5 @@
-$(window).ready(function()
+$(document).ready(function()
 {
-	var dev = {
-      	"class"      : "development_lightbox",
-            "content"    : "js/juular/404.php",
-            "width"      : 80,
-            "exitButton" : true
-	};
-
-      var mob = {
-            "class"      : "mobile_lightbox",
-            "content"    : "js/juular/404.php",
-            "width"      : 80,
-            "exitButton" : true
-      };
-
-      var des = {
-            "class"      : "design_lightbox",
-            "content"    : "js/juular/404.php",
-            "width"      : 80,
-            "exitButton" : true
-      };
-
-      var ity = {
-            "class"      : "interactivity_lightbox",
-            "content"    : "js/juular/404.php",
-            "width"      : 80,
-            "exitButton" : true
-      };
-
-      $(".development_lightbox").juular(dev);
-      $(".mobile_lightbox").juular(mob);
-      $(".design_lightbox").juular(des);
-      $(".interactivity_lightbox").juular(ity);
-
       addEvents();
 });
 
@@ -60,9 +27,31 @@ function addEvents()
 
             $.post("includes/blogcontroller.php", {comment:text, comment_name:name}, function(data)
             {
-                  $("#comment_container").prepend("<div class='comment_subcontainer'><p><strong>" + name + "</strong> " + data.datetime + " </p><p>" + text + "</p></div>");
+                  var html_string = "<div class='comment_subcontainer'><p><strong>" + name + "</strong> " + data.datetime + " </p><p>" + text + "</p></div>";
+                  $(html_string).prependTo("#comment_container").hide().fadeIn("slow");
                   $("#comment").val="";
             }, "json");
+      });
+
+      $(".servicelink").click(function(event)
+      {
+            event.preventDefault();
+            var id = $(this).attr("id");
+            switch(id)
+            {
+                  case "developmentlink":
+                        $("#developmentpar").slideToggle("slow");
+                        break;
+                  case "mobilelink":
+                        $("#mobilepar").slideToggle("slow");
+                        break;
+                  case "designlink":
+                        $("#designpar").slideToggle("slow");
+                        break;
+                  case "interactivitylink":
+                        $("#interactivitypar").slideToggle("slow");
+                        break;
+            }
       });
 
       $("#google").hover(function()

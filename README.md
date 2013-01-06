@@ -4,5 +4,4 @@
   <li>Build an Autoloader Class</li>
   <li>Support Nested Comments in Blog</li>
   <li>Introduce more header detail</li>
-  <li>Incorperate a mobile view</li>
 </ul>
