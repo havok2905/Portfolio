@@ -50,6 +50,7 @@ function addEvents()
             }
       });
 
+      var data = {request:"made"};
       $("#submitcomment").click(function(event)
       {
             event.preventDefault();
@@ -59,9 +60,9 @@ function addEvents()
 
             $.post("includes/blogcontroller.php", {comment:text, comment_name:name}, function(data)
             {
-                  console.log(data);
-                  $("#comment_container").prepend("<p><strong><span>" + name + " says: </span></strong>" + text + "</p>");
-            });
+                  $("#comment_container").prepend("<div class='comment_subcontainer'><p><strong>" + name + "</strong> " + data.datetime + " </p><p>" + text + "</p></div>");
+                  $("#comment").val="";
+            }, "json");
       });
 
       $("#google").hover(function()

@@ -1,5 +1,17 @@
 <?php
 	namespace Portfolio;
+	require_once("includes/bootstrap.php");
+
+	$posts = Database::select("blog", array("id","title", "datecreated", "path", "category", "description"), array($_GET["post"]), "title");
+	$title = $posts[0]['title'];
+	$id = $posts[0]["id"];
+	$comments = Database::select("comments", array("id","text", "parentId", "postId", "commentname", "datecreated"), array($id), "postId");
+	$comments = array_reverse($comments);
+
+	date_default_timezone_set("America/New_York");
+	$datetime = date("Y/m/d H:i:s", time());
+
+	$_SESSION["postid"] = $id;
 
 	if(!isset($_GET["post"]) || $_GET["post"] == "")
 	{
@@ -7,22 +19,19 @@
 	}
 	else
 	{
-		require_once("includes/bootstrap.php");
-
 		if(!isset($_GET["submitcomment"]))
 		{
-			$_GET["submitcomment"] = "no comment or javascript enabled";
+			$_GET["submitcomment"] = "no comment submitted or javascript enabled";
 		}
 		else if($_GET["submitcomment"] == "comment")
 		{
-			Database::insert("comments", array("text", "parentId", "postId", "commentname"), array($_GET["comment"], 0, 1, $_GET["comment_name"]));
-			$_GET["submitcomment"] = "no comment";
+			Database::insert("comments", array("text", "parentId", "postId", "commentname", "datecreated"), array($_GET["comment"], 0, $id, $_GET["comment_name"], $datetime));
+			$_GET["submitcomment"] = "comment submitted without javascript";
 		}
-
-		$posts = Database::select("blog", array("id","title", "datecreated", "path", "category", "description"), array($_GET["post"]), "title");
-		$title = $posts[0]['title'];
-		$comments = Database::select("comments", array("id","text", "parentId", "postId", "commentname"), array(1), "postId");
-		$comments = array_reverse($comments);
+		else
+		{
+			$_GET["submitcomment"] = "no comment submitted. Error.";
+		}
 
 		echo Layout::header($posts[0]["title"]);
 
@@ -49,8 +58,14 @@
 		{
 			$text = $value["text"];
 			$name = $value["commentname"];
+			$date = date("m/d/Y h:i a", strtotime($value["datecreated"]));
 
-			echo("<p><strong><span>$name says: </span></strong>$text</p>");
+			echo("
+				<div class='comment_subcontainer'>
+					<p><strong>$name </strong> $date</p>
+					<p>$text</p>
+				</div>
+			");
 		}
 
 		echo("</div>");

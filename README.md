@@ -1,11 +1,8 @@
 <h1>Portfolio</h1>
-<h2>V1: Draft</h2> 
+<h2>V2: Goals</h2> 
 <ul>
-  <li>Photoshop Comps(Home, About, Resume)
-    <ul>
-      <li>Needs photography work for personal images</li>
-      <li>Needs text content</li>
-      <li>Needs clean social media buttons</li>
-    </ul>
-  </li>
+  <li>Build an Autoloader Class</li>
+  <li>Support Nested Comments in Blog</li>
+  <li>Introduce more header detail</li>
+  <li>Incorperate a mobile view</li>
 </ul>
