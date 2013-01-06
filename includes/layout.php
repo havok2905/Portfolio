@@ -67,7 +67,6 @@ EOT;
 					</div>
 				</form>
 					<div class="contact_sub_container">
-						<h3>Follow Me</h3>
 						<ul class="footertext inlinelist">
 							<li><a target="_blank" href="https://plus.google.com/u/0/108287038105459970762/posts"><img src="img/googlethumb.png" alt="google plus icon" id="google"/><span>google+</span></a></li>
 							<li><a target="_blank" href="https://github.com/havok2905"><img src="img/gitthumb.png" alt="github icon" id="github"/><span>github</span></a></li>
@@ -75,7 +74,6 @@ EOT;
 						</ul>
 					</div>
 					<div class="contact_sub_container">
-						<h3>Contact Me</h3>
 						<ul class="footertext">
 							<li>254-424-4921</li>
 							<li>mclean.webdev@gmail.com</li>

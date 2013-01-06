@@ -161,14 +161,6 @@ h2 a{text-decoration: underline; color:#4490A4;}
 h2 a:hover{color:#999999;}
 h2 a:active{color:#999999;}
 
-h3{
-	font-family: Arial;
-	font-size: 1.3em;
-	font-weight: 900;
-	color: #4490A4;
-	margin-top: 0.5em;
-	margin-bottom: 0.5em;
-}
 h3.resume{
 	font-family: Museo;
 	font-weight: bold;
