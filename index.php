@@ -5,8 +5,7 @@
 	echo Layout::header("Home");
 ?>
 <div class="bannercontainer">
-	<div class="bannertitle full"><h2><a href="#" class="underline">ROBOSIM: Try JavaScript with Robots!</a></h2></div>
-	<img src="img/banner01.png" class="banner full"/>
+	<img src="img/banner.png" class="full"/>
 </div>
 <p class="hidden">Hi, My name is Christopher McLean!</p>
 <p class="hidden">"I like to build websites and interactive media and live in sunny Orlando Florida"</p>
@@ -44,24 +43,30 @@
 	</ul>
 </div>
 <p id="developmentpar" class="center marginup hidden servicepar">
-	Hello World Hello World Hello World Hello World Hello World
-	Hello World Hello World Hello World Hello World Hello World
-	Hello World Hello World Hello World Hello World Hello World
+	<strong>As a Web Developer</strong> I program the code that
+	makes your website or web application work. Using programming
+	languages such as HTML, CSS, JavaScript, and PHP I make 
+	software function as intended cleanly and securly.
 </p>
 <p id="mobilepar" class="center marginup hidden servicepar">
-	Hello World Hello World Hello World Hello World Hello World
-	Hello World Hello World Hello World Hello World Hello World
-	Hello World Hello World Hello World Hello World Hello World
+	<strong>As a Mobile Developer</strong> I program the code that
+	makes your mobie or tablet application run as expected. I work 
+	with Java for native Java Applications, and responsive design
+	with CSS to adjust the layouts of mobile web applications.
 </p>
 <p id="designpar" class="center marginup hidden servicepar">
-	Hello World Hello World Hello World Hello World Hello World
-	Hello World Hello World Hello World Hello World Hello World
-	Hello World Hello World Hello World Hello World Hello World
+	<strong>As a Designer</strong> I use color theory, typography, 
+	and other design principles to make your applications both user
+	friendly as werll as aethetically pleasing. This involves work
+	with Photoshop, Illustrator, HTML, and CSS. I can design interfaces, 
+	logos, print media.
 </p>
 <p id="interactivitypar" class="center marginup hidden servicepar">
-	Hello World Hello World Hello World Hello World Hello World
-	Hello World Hello World Hello World Hello World Hello World
-	Hello World Hello World Hello World Hello World Hello World
+	<strong>As an Interactive Designer</strong> I use human psycology,
+	itterative design, game design, and more to improve on the usability
+	and meaningful effects of using interactive systems. I aim to ensure
+	that a system not ony functions cleanly, but also accomplishes its
+	main goal.
 </p>
 <div class="clear"></div>
 <h2>Inside Of My Head</h2>

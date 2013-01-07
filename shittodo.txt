@@ -1,11 +1,11 @@
-
-2. Fix Juular scroll top functions to match IE and Firefox
-9. Develop JS animations
-11. Strip email validation functions from Tux site
-12. Develop blogging comment system
-13. Build lightbox content for index.html
-14. Build robots.txt
-15. Incorperate Google Analytics
-18. Fix Padding Issue in Juular.js
+1. Test email system on Site5
+2. Build HTACESS file
+3. Make Content for Projects Page
+4. Build robots.txt
+5. Incorperate Google Analytics
+6. Restric access to sensative directories
+7. Clean Up Code
+8. Proofread Copy
+9. Launch and have a beer
 
 

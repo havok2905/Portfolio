@@ -32,7 +32,7 @@
 			</a>
 		</li>
 	</ul>
-	<ul class="left">
+	<ul class="left work">
 		<li>
 			<a href="project.php?post=welcome">
 				<img src="img/robosimthumb.png" alt="personal site project icon"  class="shadow"/>

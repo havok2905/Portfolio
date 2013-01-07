@@ -11,6 +11,7 @@
 		// Prints page headers
 		public static function header($title = null)
 		{
+
 			$response = <<<EOT
 <!DOCTYPE html>
 <html>
@@ -49,39 +50,74 @@ EOT;
 		// Prints page footers
 		public static function footer()
 		{
+			if(!isset($_POST["send"]) || $_POST["send"]=="")
+			{
+				$_POST["send"] = "";
+			}
+			else if($_POST["send"] == "send")
+			{
+				$email = $_POST["email"];
+				$name = $_POST["name"];
+				$subject = $_POST["subject"];
+				$message = $_POST["message"];
+
+				$errorarray = Email::validate_lengths($name, $subject, $email, $message);
+
+				$send = true;
+
+				foreach ($errorarray as $key => $value)
+				{
+					if($value == false)
+					{
+						$send = false;
+					}
+				}
+
+				if($send == true)
+				{
+					$isvalid = Email::validate_email($email);
+
+					if($isvalid == true)
+					{
+						Email::send($name, $subject, $email, $message);
+						Email::log($name, $subject, $email, $message);
+					}
+				}
+			}
+
 			$response = <<<EOT
 		</div>
 		<div class="footer">
 			<div class="header_container">
 				<h2>Send Me A Message!</h2>
-				<form name="email" action="" method="post">
-					<textarea name="message" class="styledform"></textarea>
+				<div class="contact_sub_container">
+					<ul class="footertext inlinelist">
+						<li><a target="_blank" href="https://plus.google.com/u/0/108287038105459970762/posts"><img src="img/googlethumb.png" alt="google plus icon" id="google"/><span>google+</span></a></li>
+						<li><a target="_blank" href="https://github.com/havok2905"><img src="img/gitthumb.png" alt="github icon" id="github"/><span>github</span></a></li>
+						<li><a target="_blank" href="http://www.linkedin.com/pub/christopher-mclean/23/261/789"><img src="img/linkedthumb.png" alt="linkedin icon" id="linkedin"></img><span>linkedin</span></a></li>
+					</ul>
+				</div>
+				<div class="contact_sub_container">
+					<ul class="footertext inlinelist">
+						<li>254-424-4921 - </li>
+						<li>mclean.webdev@gmail.com - </li>
+						<li>1829 Loftway Circle, Apt 1422 - </li>
+						<li>Orlando Florida, 32826</li>
+					</ul>
+				</div>
+				<form id="emailform" name="emailform" action="#emailform" method="post">
+					<textarea id="message" name="message" class="styledform"></textarea>
 					<div class="input_container">
-						<!--[if IE]><input class="styledform" type="text" name="name" value="name"/><![endif]-->
-						<![if !IE]><input class="styledform" type="text" name="name"  placeholder="name"/><![endif]>
-						<!--[if IE]><input class="styledform" type="text" name="email" value="email"/><![endif]-->
-						<![if !IE]><input class="styledform" type="text" name="email" placeholder="email"/><![endif]>
-						<!--[if IE]><input class="styledform" type="text" name="subject" value="subject"/><![endif]-->
-						<![if !IE]><input class="styledform" type="text" name="subject" placeholder="subject"/><![endif]>
-						<input class="submit" type="submit" name="send" value="send"/>
+						<!--[if IE]><input class="styledform" type="text" id="name" name="name" value="name"/><![endif]-->
+						<![if !IE]><input class="styledform" type="text" id="name" name="name"  placeholder="name"/><![endif]>
+						<!--[if IE]><input class="styledform" type="text" id="email" name="email" value="email"/><![endif]-->
+						<![if !IE]><input class="styledform" type="text" id="email" name="email" placeholder="email"/><![endif]>
+						<!--[if IE]><input class="styledform" type="text" id="subject" name="subject" value="subject"/><![endif]-->
+						<![if !IE]><input class="styledform" type="text" id="subject" name="subject" placeholder="subject"/><![endif]>
+						<input class="submit" type="submit" id="send" name="send" value="send"/>
 					</div>
 				</form>
-					<div class="contact_sub_container">
-						<ul class="footertext inlinelist">
-							<li><a target="_blank" href="https://plus.google.com/u/0/108287038105459970762/posts"><img src="img/googlethumb.png" alt="google plus icon" id="google"/><span>google+</span></a></li>
-							<li><a target="_blank" href="https://github.com/havok2905"><img src="img/gitthumb.png" alt="github icon" id="github"/><span>github</span></a></li>
-							<li><a target="_blank" href="http://www.linkedin.com/pub/christopher-mclean/23/261/789"><img src="img/linkedthumb.png" alt="linkedin icon" id="linkedin"></img><span>linkedin</span></a></li>
-						</ul>
-					</div>
-					<div class="contact_sub_container">
-						<ul class="footertext">
-							<li>254-424-4921</li>
-							<li>mclean.webdev@gmail.com</li>
-							<li>1829 Loftway Circle, Apt 1422</li>
-							<li>Orlando Florida, 32826</li>
-						</ul>
-					</div>
-					<div class="clear"></div>
+				<div class="clear"></div>
 			</div>
 		</div>
 	</body>

@@ -6,7 +6,7 @@
 ?>
 
 <div class="center_container">
-	<img src="img/404.png"/>
+	<img src="img/404.png" class="half"/>
 	<p class="hidden">Error 404. Sorry, file not found.</p>
 </div>
 
