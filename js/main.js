@@ -35,6 +35,7 @@ function addEvents()
             }, "json");
       });
 
+      // EMAIL AJAX REQUEST AND FEEDBACK ANIMATION
       var data = {request:"made"};
       $("#send").click(function(event)
       {
@@ -78,23 +79,23 @@ function addEvents()
       // SOCIAL MEDIA ICONS
       $("#google").hover(function()
       {
-            $("#google").attr("src", "img/googlethumbbw.png");
+            $("#google").attr("src", "/Portfolio/img/googlethumbbw.png");
       }, function()
       {
-            $("#google").attr("src", "img/googlethumb.png");
+            $("#google").attr("src", "/Portfolio/img/googlethumb.png");
       });
       $("#github").hover(function()
       {
-            $("#github").attr("src", "img/gitthumbbw.png");
+            $("#github").attr("src", "/Portfolio/img/gitthumbbw.png");
       }, function()
       {
-             $("#github").attr("src", "img/gitthumb.png");
+             $("#github").attr("src", "/Portfolio/img/gitthumb.png");
       });
       $("#linkedin").hover(function()
       {
-            $("#linkedin").attr("src", "img/linkedthumbbw.png");
+            $("#linkedin").attr("src", "/Portfolio/img/linkedthumbbw.png");
       }, function()
       {
-            $("#linkedin").attr("src", "img/linkedthumb.png");
+            $("#linkedin").attr("src", "/Portfolio/img/linkedthumb.png");
       });
 }

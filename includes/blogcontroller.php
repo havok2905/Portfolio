@@ -2,10 +2,12 @@
 	namespace Portfolio;
 	include("bootstrap.php");
 
+	// Set all formats of the date being used
 	date_default_timezone_set("America/New_York");
 	$datetime = date("Y/m/d H:i:s", time());
 	$datetimepretty = date("m/d/Y h:i a");
 
+	// Check if post data has been sent and insert new comment to database
 	if(!isset($_POST["comment"]) || !isset($_POST["comment_name"]))
 	{
 		$_POST["comment"] = "no comment";
@@ -17,6 +19,7 @@
 		$_POST["submitcomment"] = "no comment";
 	}
 
+	//return pretty formatted date as json
 	$array = array("datetime"=>$datetimepretty);
 	echo json_encode($array);
 ?>

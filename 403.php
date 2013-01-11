@@ -6,8 +6,8 @@
 ?>
 
 <div class="center_container">
-	<img src="/Portfolio/img/404.png" class="half" alt="404 error"/>
-	<p class="hidden">Error 404. Sorry, file not found.</p>
+	<img src="/Portfolio/img/403.png" class="half" alt="403 error"/>
+	<p class="hidden">Error 404. Sorry, access denied.</p>
 </div>
 
 <?php

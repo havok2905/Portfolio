@@ -1,0 +1,7 @@
+AddHandler application/x-httpd-php53 .php
+
+ErrorDocument 403 /Portfolio/403.php
+ErrorDocument 404 /Portfolio/404.php
+ErrorDocument 500 /Portfolio/500.php
+
+Options -Indexes

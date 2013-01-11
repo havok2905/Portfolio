@@ -169,11 +169,13 @@ h2 a{text-decoration: underline; color:#4490A4;}
 h2 a:hover{color:#999999;}
 h2 a:active{color:#999999;}
 
-h3.resume{
+h3{
+	margin-top:1em;
 	font-family: Museo;
 	font-weight: bold;
 	font-size: 1.5em;
 	color: #333333;
+	text-transform: lowercase;
 }
 h4{
 	font-weight: bold;
@@ -225,6 +227,7 @@ ul.nav a:hover{color: #DDDDDD;}
 .footertext a{color:#FAFAFA;}
 
 p{
+	margin-top: 1.625em;
 	margin-bottom: 1.625em;
 	max-width:50em;
 }
@@ -298,16 +301,16 @@ input{
 }
 
 /* BACKGROUNDS */
-.house_icon:hover{background: url('../img/house.png') no-repeat center;}
-.house_icon:active{background: url('../img/house.png') no-repeat center;}
-.me_icon:hover{background: url('../img/person.png') no-repeat center;}
-.me_icon:active{background: url('../img/person.png') no-repeat center;}
-.resume_icon:hover{background: url('../img/case.png') no-repeat center;}
-.resume_icon:active{background: url('../img/case.png') no-repeat center;}
-.blog_icon:hover{background: url('../img/blog.png') no-repeat center;}
-.blog_icon:active{background: url('../img/blog.png') no-repeat center;}
-.work_icon:hover{background: url('../img/code.png') no-repeat center;}
-.work_icon:active{background: url('../img/code.png') no-repeat center;}
+.house_icon:hover{background: url('/Portfolio/img/house.png') no-repeat center;}
+.house_icon:active{background: url('/Portfolio/img/house.png') no-repeat center;}
+.me_icon:hover{background: url('/Portfolio/img/person.png') no-repeat center;}
+.me_icon:active{background: url('/Portfolio/img/person.png') no-repeat center;}
+.resume_icon:hover{background: url('/Portfolio/img/case.png') no-repeat center;}
+.resume_icon:active{background: url('/Portfolio/img/case.png') no-repeat center;}
+.blog_icon:hover{background: url('/Portfolio/img/blog.png') no-repeat center;}
+.blog_icon:active{background: url('/Portfolio/img/blog.png') no-repeat center;}
+.work_icon:hover{background: url('/Portfolio/img/code.png') no-repeat center;}
+.work_icon:active{background: url('/Portfolio/img/code.png') no-repeat center;}
 .comment_icon{
 	background: url('../img/blog_thumb.png') no-repeat center; 
 	padding-bottom:0.5em;
@@ -366,6 +369,7 @@ input{
 		font-size: 0.8em;
 	}
 	.bannercontainer{display:none; margin-top: 0em;}
+	.postbanner{display: none;}
 	.container{padding-top: 1em;}
 	.header{position: static;}
 	.serviceimg{display: none;}

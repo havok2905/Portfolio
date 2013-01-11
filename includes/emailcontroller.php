@@ -2,6 +2,9 @@
 	namespace Portfolio;
 	include("bootstrap.php");
 
+	// Check for post data and validate email
+	// Check to make sure each input has been complete
+	// Send and log email
 	if(!isset($_POST["send"]) || $_POST["send"]=="")
 	{
 		$_POST["send"] = "";

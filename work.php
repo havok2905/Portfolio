@@ -8,53 +8,53 @@
 <div class="center_container">
 	<ul class="left work">
 		<li>
-			<a href="project.php?post=welcome">
+			<a href="project.php?post=robosim">
 				<img src="img/robosimthumb.png" alt="robosim project icon"  class="shadow"/>
-				<h3 class="resume">RoboSim</h3>
+				<h3>RoboSim</h3>
 			</a>
 		</li>
 		<li>
-			<a href="project.php?post=welcome">
+			<a href="project.php?post=personalbrand">
 				<img src="img/personalbrandthumb.png" alt="personal brand project icon"  class="shadow"/>
-				<h3 class="resume">Personal Brand</h3>
+				<h3>Personal Brand</h3>
 			</a>
 		</li>
 		<li>
-			<a href="project.php?post=welcome">
-				<img src="img/robosimthumb.png" alt="lightbox plugin project icon"  class="shadow"/>
-				<h3 class="resume">JQuery Lightbox</h3>
+			<a href="project.php?post=juular">
+				<img src="img/juularthumb.png" alt="lightbox plugin project icon"  class="shadow"/>
+				<h3>JQuery Lightbox</h3>
 			</a>
 		</li>
 		<li>
-			<a href="project.php?post=welcome">
-				<img src="img/robosimthumb.png" alt="pdo wrapper project icon"  class="shadow"/>
-				<h3 class="resume">PDO Wrapper</h3>
+			<a href="project.php?post=pdoclass">
+				<img src="img/regulatorthumb.png" alt="pdo wrapper project icon"  class="shadow"/>
+				<h3>PDO Class</h3>
 			</a>
 		</li>
 	</ul>
 	<ul class="left work">
 		<li>
-			<a href="project.php?post=welcome">
-				<img src="img/robosimthumb.png" alt="personal site project icon"  class="shadow"/>
-				<h3 class="resume">Personal Site</h3>
+			<a href="project.php?post=personalsite">
+				<img src="img/personalsitethumb.png" alt="personal site project icon"  class="shadow"/>
+				<h3>Personal Site</h3>
 			</a>
 		</li>
 		<li>
-			<a href="project.php?post=welcome">
-				<img src="img/robosimthumb.png" alt="personal site project icon"  class="shadow"/>
-				<h3 class="resume">Personal Site</h3>
+			<a href="project.php?post=stockexchange">
+				<img src="img/exchangethumb.png" alt="front-end exchange project icon"  class="shadow"/>
+				<h3>Stock Exchange</h3>
 			</a>
 		</li>
 		<li>
-			<a href="project.php?post=welcome">
-				<img src="img/robosimthumb.png" alt="personal site project icon"  class="shadow"/>
-				<h3 class="resume">Personal Site</h3>
+			<a href="project.php?post=crystalball">
+				<img src="img/crystalballthumb.png" alt="crystal ball app project icon"  class="shadow"/>
+				<h3>Crystal Ball App</h3>
 			</a>
 		</li>
 		<li>
-			<a href="project.php?post=welcome">
-				<img src="img/robosimthumb.png" alt="personal site project icon"  class="shadow"/>
-				<h3 class="resume">Personal Site</h3>
+			<a href="project.php?post=headphones">
+				<img src="img/earphonesthumb.png" alt="3D headphones project icon"  class="shadow"/>
+				<h3>3D Headphones</h3>
 			</a>
 		</li>
 	</ul>

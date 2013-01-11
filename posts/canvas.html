@@ -1,5 +1,5 @@
 <h2>HTML5 Canvas Tutorial</h2>
-<h3 class="resume">Prerequisites</h3>
+<h3>Prerequisites</h3>
 <div class="mx2">
 	<ol>
 		<li>
@@ -30,12 +30,12 @@
 		</li>
 	</ol>
 </div>
-<h3 class="resume">Resources</h3>
+<h3>Resources</h3>
 <ul>
 	<li><a href="img/myimage.png" target="_blank" class="underline">IMAGE FOR USE IN PROJECT</a></li>
 	<li><a href="http://tux.cdl.ucf.edu/~ch005004/tut/test.html" target="_blank" class="underline">END RESULT</a></li>
 </ul>
-<h3 class="resume">Introduction to the Canvas</h3>
+<h3>Introduction to the Canvas</h3>
 <p>
 	The release of HTML5 brought a myriad of changes to the web development community, but the canvas element, combined with some clever JavaScript is what allows us to create complex and dynamic graphical content for the web. We will be focusing on it specifically to build a basic control system for a car in a top down browser based game. 
 <p>
@@ -58,7 +58,7 @@
     	&lt;/body&gt;
 	&lt;/html&gt;
 </pre>
-<h3 class="resume">Shapes!</h3>
+<h3>Shapes!</h3>
 <p>
 	Next we will look at how to actually draw some simple shapes and import images to the canvas using JavaScript! First thing we need to do is grab the canvas from the HTML document and then grab the "context" of the element. The context controls how the canvas element displays graphics. Contexts can be 2D or 3D, but we will be focusing on 2D for our top down game controls. Now let's draw some basic shapes!
 </p>
@@ -82,7 +82,7 @@
 		<li>We then use the method fillRect() of the canvas tag to build a rectangle with x and y coordinates. This translates into fillRect(x1, y1, x2, y2). Since we already set the context fillStyle to a color, the rectangle uses that to fill in itself.</li>
 	</ol>
 </div>
-<h3 class="resume">Images!</h3>
+<h3>Images!</h3>
 <p>The process of importing an image is a bit different because we are not actually drawing it using JavaScript.</p>
 <div class="mx2">
 	<ol>
@@ -112,7 +112,7 @@
 		context.drawImage(car, x, y);
 	}
 </pre>
-<h3 class="resume">Making our Car Move</h3>
+<h3>Making our Car Move</h3>
 <p>
 	Canvas handles movement much like traditional animation does in cartoons. Think of the canvas tag like a flipbook. Each time you draw something using the context of canvas, you are drawing in a single page in a flipbook. So how do we program a flipbook?
 </p>
@@ -163,7 +163,7 @@
 	The reason we set setInterval to a variable is so we may stop the animation from occurring. We simply do the following if we want things to stop.
 </p>
 <pre class="prettyprint lang-js">clearInterval(move);</pre>
-<h3 class="resume">Controlling the Movementt</h3>
+<h3>Controlling the Movement</h3>
 <p>SOH CAH TOA</p>
 <p>
 	If you have had a high school math course, you may recognize these letters. They represent SINE, COSINE, and TANGENT. They are used to in calculating the angles and lengths of triangles. How will we use this? Well consider the movement of our car as described in the diagram below.
@@ -336,7 +336,7 @@
 <p>
 	For further reading, I would suggest to researching JavaScript design patterns and object oriented programming. This will allow you to support several cars at once and manage more complex code that comes in writing a larger HTML5 applications.
 </p>
-<h3 class="resume">Further Reading</h3>
+<h3>Further Reading</h3>
 <h4>HTML5 Resources</h4>
 <ul>
 	<li><a href="https://developer.mozilla.org/en-US/docs/HTML/Canvas" target="_blank" class="underline">https://developer.mozilla.org/en-US/docs/HTML/Canvas</a></li>

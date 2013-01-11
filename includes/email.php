@@ -1,4 +1,9 @@
 <?php 
+	/**
+	* Email Class
+	* @author Christopher McLean
+	* @version 1.0
+	**/
 	namespace Portfolio;
 	
 	class Email

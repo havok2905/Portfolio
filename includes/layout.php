@@ -19,25 +19,34 @@
 		<title>Christopher McLean Web Development and Design $title</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" href="img/icon_thumb.png"/>
-		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
-		<link rel="stylesheet" type="text/css" href="css/main.css"/>
-		<link rel="stylesheet" type="text/css" href="js/juular/lightbox.css"/>
-		<link rel="stylesheet" typer="text/css" href="js/google-code-prettify/prettify.css"/>
-		<script type="text/javascript" src="js/jquery.js"></script>
-		<script type="text/javascript" src="js/juular/juular.js"></script>
-		<script type="text/javascript" src="js/google-code-prettify/prettify.js"></script>
-		<script type="text/javascript" src="js/main.js"></script>
+		<link rel="stylesheet" type="text/css" href="/Portfolio/css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="/Portfolio/css/main.css"/>
+		<link rel="stylesheet" type="text/css" href="/Portfolio/js/google-code-prettify/prettify.css"/>
+		<script type="text/javascript" src="/Portfolio/js/jquery.js"></script>
+		<script type="text/javascript" src="/Portfolio/js/google-code-prettify/prettify.js"></script>
+		<script type="text/javascript" src="/Portfolio/js/main.js"></script>
+		<script type="text/javascript">
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-37496106-1']);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+		</script>
 	</head>
 	<body onload="prettyPrint()">
 		<div class="header">
 			<div class="header_container">
-				<h1><a href="index.php"><img src="img/header.png"/><span>Christopher McLean, web developer and designer</span></a></h1>
+				<h1><a href="index.php"><img src="/Portfolio/img/header.png" alt="header"/><span>Christopher McLean, web developer and designer</span></a></h1>
 				<ul class="nav">
-					<li><a href="index.php" class="house_icon">home</a></li>
-					<li><a href="me.php" class="me_icon">me</a></li>
-					<li><a href="resume.php" class="resume_icon">resume</a></li>
-					<li><a href="blog.php" class="blog_icon">blog</a></li>
-					<li><a href="work.php" class="work_icon">work</a></li>
+					<li><a href="/Portfolio/index.php" class="house_icon">home</a></li>
+					<li><a href="/Portfolio/me.php" class="me_icon">me</a></li>
+					<li><a href="/Portfolio/resume.php" class="resume_icon">resume</a></li>
+					<li><a href="/Portfolio/blog.php" class="blog_icon">blog</a></li>
+					<li><a href="/Portfolio/work.php" class="work_icon">work</a></li>
 				</ul>
 				<div class="clear"></div>
 			</div>
@@ -92,9 +101,9 @@ EOT;
 				<h2>Send Me A Message!</h2>
 				<div class="contact_sub_container">
 					<ul class="footertext inlinelist">
-						<li><a target="_blank" href="https://plus.google.com/u/0/108287038105459970762/posts"><img src="img/googlethumb.png" alt="google plus icon" id="google"/><span>google+</span></a></li>
-						<li><a target="_blank" href="https://github.com/havok2905"><img src="img/gitthumb.png" alt="github icon" id="github"/><span>github</span></a></li>
-						<li><a target="_blank" href="http://www.linkedin.com/pub/christopher-mclean/23/261/789"><img src="img/linkedthumb.png" alt="linkedin icon" id="linkedin"></img><span>linkedin</span></a></li>
+						<li><a target="_blank" href="https://plus.google.com/u/0/108287038105459970762/posts"><img src="/Portfolio/img/googlethumb.png" alt="google plus icon" id="google"/><span>google+</span></a></li>
+						<li><a target="_blank" href="https://github.com/havok2905"><img src="/Portfolio/img/gitthumb.png" alt="github icon" id="github"/><span>github</span></a></li>
+						<li><a target="_blank" href="http://www.linkedin.com/pub/christopher-mclean/23/261/789"><img src="/Portfolio/img/linkedthumb.png" alt="linkedin icon" id="linkedin"/><span>linkedin</span></a></li>
 					</ul>
 				</div>
 				<div class="contact_sub_container">
