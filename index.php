@@ -4,15 +4,21 @@
 	require_once("includes/bootstrap.php");
 	echo Layout::header("Home");
 ?>
+
 <div class="bannercontainer">
-	<img src="img/banner.png" class="full"/>
+	<div class="half">
+		<p class="tagline">
+			Hi, I'm <span>Christopher McLean.</span> I am a web developer and designer, located in Orlando Florida, and I like to program and design content for the web.
+		</p>
+		<a href="#contact" class="contactmebutton">contact me</a>
+	</div>
+	<video controls class="half">
+	  <source src="intro.mp4" type="video/mp4">
+	  <source src="intro.ogg" type="video/ogg">
+		Your browser does not support the video tag.
+	</video>
 </div>
-<p class="hidden">Hi, My name is Christopher McLean!</p>
-<p class="hidden">"I like to build websites and interactive media and live in sunny Orlando Florida"</p>
-<ul class="hidden">
-	<li>254-424-4921</li>
-	<li>mclean.webdev@gmail.com</li>
-</ul>
+<div class="clear"></div>
 <h2>My Services</h3>
 <div class="center_container">
 	<ul class="left">

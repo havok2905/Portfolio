@@ -13,8 +13,8 @@ namespace Portfolio;
 	{
 		public static $host = "localhost";
 		public static $database = "portfolio";
-		public static $username = "";
-		public static $password = "";		
+		public static $username = "havok2905";
+		public static $password = "ee5ahcqh";		
 
 	// return the connection settings
 	public static function get_connection_settings() {

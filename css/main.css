@@ -28,7 +28,7 @@ body{
 	font-family: Gandhi;
 	line-height: 1.6875em;
 	font-size: 1em;
-	background-image:url('../img/gray_jean.png');
+	background-image:url('/Portfolio/img/gray_jean.png');
 	word-wrap:break-word;
 }
 body *:focus{outline: none;}
@@ -49,9 +49,9 @@ body *:focus{outline: none;}
 .header{
 	padding-top: 1em;
 	position: fixed;
-	background-image:url('../img/gray_jean.png');
+	background-image:url('/Portfolio/img/gray_jean.png');
 	width:100%;
-	z-index: 0;
+	z-index: 1;
 }
 
 .header_container{
@@ -104,23 +104,6 @@ body *:focus{outline: none;}
 .pdf{
 	position: relative;
 	z-index: 0;
-}
-
-.bannercontainer{
-	margin-top: 3em;
-	position:relative;
-	z-index: -1;
-}
-
-.bannercontainer img{display: block;}
-
-.bannercontainer::before{
-	display: block;
-	content: '';
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	box-shadow: inset 0em 0em 0.4em #333;
 }
 
 .shadow{box-shadow: #666 0em 0.5em 1em;}
@@ -177,8 +160,33 @@ h3{
 	color: #333333;
 	text-transform: lowercase;
 }
+
 h4{
 	font-weight: bold;
+}
+
+.bannercontainer{
+	margin-top: 3em;
+	width: 100%;
+	height: 100%;
+}
+.bannercontainer .half{
+	float: left;
+}
+
+.tagline{
+	margin-top:1em;
+	font-family: Museo;
+	font-weight: bold;
+	font-size: 1.5em;
+	color: #333333;
+}
+.tagline span{
+	font-size: 1.7em;
+	color: #4490A4;
+}
+
+video{
 }
 
 a{
@@ -188,6 +196,17 @@ a{
 a:hover{color:#999999;}
 a:active:{color:#999999;}
 a.underline{text-decoration: underline;}
+
+a.contactmebutton{
+	padding: 0.5em;
+	font-size: 2em;
+	background-color: #4490A4;
+	color:#FFFFFF;
+	font-family: Museo;
+}
+a.contactmebutton:hover{
+	background-color: #222222;
+}
 
 ul li{max-width: 50em;}
 a{max-width: 50em;}
@@ -312,7 +331,7 @@ input{
 .work_icon:hover{background: url('/Portfolio/img/code.png') no-repeat center;}
 .work_icon:active{background: url('/Portfolio/img/code.png') no-repeat center;}
 .comment_icon{
-	background: url('../img/blog_thumb.png') no-repeat center; 
+	background: url('/Portfolio/img/blog_thumb.png') no-repeat center; 
 	padding-bottom:0.5em;
 	padding-left:1em;
 	padding-right:1em;
@@ -342,6 +361,9 @@ input{
 	ul.left h3{font-size: 0.8em;}
 
 	pre{font-size: 0.9em;}
+
+	.bannercontainer .half{float: none;}
+	.bannercontainer .half{width: 100%;}
 }
 
 /* BEGIN PHONE LAYOUT */

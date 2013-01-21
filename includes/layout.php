@@ -18,7 +18,7 @@
 	<head> 
 		<title>Christopher McLean Web Development and Design $title</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="shortcut icon" href="img/icon_thumb.png"/>
+		<link rel="shortcut icon" href="/Portfolio/img/icon_thumb.png"/>
 		<link rel="stylesheet" type="text/css" href="/Portfolio/css/reset.css"/>
 		<link rel="stylesheet" type="text/css" href="/Portfolio/css/main.css"/>
 		<link rel="stylesheet" type="text/css" href="/Portfolio/js/google-code-prettify/prettify.css"/>
@@ -96,7 +96,7 @@ EOT;
 
 			$response = <<<EOT
 		</div>
-		<div class="footer">
+		<div class="footer" id="contact">
 			<div class="header_container">
 				<h2>Send Me A Message!</h2>
 				<div class="contact_sub_container">

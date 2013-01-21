@@ -46,9 +46,9 @@
 			</a>
 		</li>
 		<li>
-			<a href="project.php?post=crystalball">
-				<img src="img/crystalballthumb.png" alt="crystal ball app project icon"  class="shadow"/>
-				<h3>Crystal Ball App</h3>
+			<a href="project.php?post=toysite">
+				<img src="img/toysthumb.png" alt="mclean toys project logo"  class="shadow"/>
+				<h3>Retro Toy Site</h3>
 			</a>
 		</li>
 		<li>
