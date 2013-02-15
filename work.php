@@ -14,9 +14,9 @@
 			</a>
 		</li>
 		<li>
-			<a href="project.php?post=personalbrand">
-				<img src="img/personalbrandthumb.png" alt="personal brand project icon"  class="shadow"/>
-				<h3>Personal Brand</h3>
+			<a href="project.php?post=toysite">
+				<img src="img/toysthumb.png" alt="mclean toys project logo"  class="shadow"/>
+				<h3>Retro Toy Site</h3>
 			</a>
 		</li>
 		<li>
@@ -46,15 +46,15 @@
 			</a>
 		</li>
 		<li>
-			<a href="project.php?post=toysite">
-				<img src="img/toysthumb.png" alt="mclean toys project logo"  class="shadow"/>
-				<h3>Retro Toy Site</h3>
+			<a href="project.php?post=personalbrand">
+				<img src="img/personalbrandthumb.png" alt="personal brand project icon"  class="shadow"/>
+				<h3>Personal Brand</h3>
 			</a>
 		</li>
 		<li>
-			<a href="project.php?post=headphones">
-				<img src="img/earphonesthumb.png" alt="3D headphones project icon"  class="shadow"/>
-				<h3>3D Headphones</h3>
+			<a href="project.php?post=stone">
+				<img src="img/stonethumb.png" alt="stone email blast project icon"  class="shadow"/>
+				<h3>Stone Email Blast</h3>
 			</a>
 		</li>
 	</ul>

@@ -175,18 +175,15 @@ h4{
 }
 
 .tagline{
+	width:100%;
 	margin-top:1em;
 	font-family: Museo;
 	font-weight: bold;
-	font-size: 1.5em;
+	font-size: 1.8em;
 	color: #333333;
 }
 .tagline span{
-	font-size: 1.7em;
 	color: #4490A4;
-}
-
-video{
 }
 
 a{
@@ -203,9 +200,12 @@ a.contactmebutton{
 	background-color: #4490A4;
 	color:#FFFFFF;
 	font-family: Museo;
+	border-radius: 0.25em;
+	box-shadow: #27535e 0px 5px 2px;
 }
 a.contactmebutton:hover{
 	background-color: #222222;
+	box-shadow: #111111 0px 5px 2px;
 }
 
 ul li{max-width: 50em;}
@@ -258,9 +258,7 @@ strong{font-weight: bold;}
 	width:100%;
 }
 
-.blogimg{
-	width:100%;
-}
+.blogimg{width:100%;}
 
 pre{
 	background-color: #FFFFFF;
@@ -362,8 +360,11 @@ input{
 
 	pre{font-size: 0.9em;}
 
-	.bannercontainer .half{float: none;}
-	.bannercontainer .half{width: 100%;}
+	.bannercontainer .half{
+		float: none;
+		width: 100%;
+		margin-bottom: 0.5em;
+	}
 }
 
 /* BEGIN PHONE LAYOUT */

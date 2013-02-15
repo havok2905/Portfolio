@@ -12,11 +12,6 @@
 		</p>
 		<a href="#contact" class="contactmebutton">contact me</a>
 	</div>
-	<video controls class="half">
-	  <source src="intro.mp4" type="video/mp4">
-	  <source src="intro.ogg" type="video/ogg">
-		Your browser does not support the video tag.
-	</video>
 </div>
 <div class="clear"></div>
 <h2>My Services</h3>
@@ -89,7 +84,6 @@
 		<p>$description</p>
 	");
 ?>
-
 
 <?php
 	echo Layout::footer();

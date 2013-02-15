@@ -31,29 +31,23 @@
 </ul>
 <h2>Employment</h2>
 <h3>University of Central Florida (May 2012 - Present)<br/> Center For Distributed Learning, Techranger</h3>
-<p>
-	Developed and managed accessible, section 508 compliant course websites for a University with over 50,000 students using XHTML and CSS. 
-	Worked on internal web applications to benefit the department using server-side and client-side programming languages such as PHP, Python, 
-	and JavaScript. 
-</p>
-<p>
-	<strong>Blended Open Badges:</strong> a badge award distribution system for UCF faculty utilizing PHP, JavaScript, and Mozilla Open Badges API.
-</p>
-<p>
-	<strong>Learn Programming with Robots:</strong> Developing an HTML5 driven "Learn JavaScript" tool to aid new programmers struggling with the topic. 
-	It focuses on allowing students to write simple JavaScript to manipulate digital robots through an in browser code editor.  
-</p>
-<p>
-	<strong>Form Manager:</strong> Developing database architecture and server-side code for form creation software to be used by UCF professors 
-	based on an older version built in Cold Fusion.
-</p>
+<ul class="markedlist">
+	<li>Developed and managed,  accessible, section 508 compliant course pages for a University with over 50,000 students.</li>
+	<li>Developed a badge award distribution system for UCF faculty utilizing PHP, JavaScript, and Mozilla Open Badges API.</li>
+	<li>Developing an HTML5 driven "Learn Programming" tool to aid new programming students. It focuses on allowing students to write simple JavaScript to manipulate digital robots through an in browser code editor.</li>
+</ul>
+
 <h3>Kittatinny Mountain Scout Reservation (June 2006 - August 2007)<br/> Central NJ Council: Boyscouts of America, Dayton NJ</h3>
 <p>
 	<strong>Camp Counselor and Instructor</strong> Conducted workshops pertaining to survival skills for approximately 180 campers, 
 	over an 8 week period, and provided assistance in camp maintenance and inventory. Organized and maintained records of camper’s 
 	progress through the 8 week workshops. 
 </p>
-<h2>Activities</h2>
+<h2>Honors &amp; Awards</h2>
+<h3>University of Central Florida(2009-2013)</h3>
+<ul>
+	<li>Attended Student Panel on Online Education: Took part in a student panel for the discussion of the effectiveness of education in regards to online environments with the purpose of educating professors.</li>
+</ul>
 <h3>Boy Scouts of America, Troop 33 (2006 - 2009)</h3>
 <p>
 	<strong>Eagle Scout Award 2009:</strong> Organized and collected over 500 toys for the Marine Corps Toy for Tots program. Maintained records of toy inventory, 
@@ -61,26 +55,28 @@
 </p>
 <h3>FIRST Robotics Competition (2005 - 2009)</h3>
 <p>
-	<strong>Scouting Manager:</strong> Provided outlooks on competitors from a strategic, as well as technical perspective. Organized logistics 
-	for 20+ person information gathering team. Conducted team meetings throughout the duration of the competitions.
+	1 World Finalist Medal out of 350 teams & various Regional Champion Medals
 </p>
-<p>
-	<strong>New Jersey Regional:</strong> 3 time regional champions, competing against approximately 65 teams. 
-</p>
-<p>
-	<strong>World Championships:</strong> 1 time world finalist (2nd place), competing against approximately 350 teams. 
-</p>
+
+<h2>Languages, Frameworks, and Software</h2>
+<ul class="markedlist">
+	<li>JavaScript,  JQuery, Mobile jQuery, D3.js</li>
+	<li>PHP, Fuel PHP, MySQL, PDO</li>
+	<li>CSS3</li>
+	<li>XML, XHTML, HTML5, SVG</li>
+	<li>Java, Android Development</li>
+	<li>Actionscript 3</li>
+	<li>Git Version Control</li>
+	<li>Photoshop, Illustrator, Flash</li>
+	<li>3D Studio Max, Maya</li>
+</ul>
+
 <h2>Skills</h2>
 <ul class="markedlist">
-	<li>Experience leading and participating in successful team based projects</li>
-	<li>Can use GIT version control in team based projects</li>
-	<li>Can develop object oriented software using JavaScript, Java, and PHP</li>
-	<li>Proper understanding of AJAX software development, jQuery, and unobtrusive JavaScript</li>
-	<li>Proper understanding of PHP and designing database schema</li>
-	<li>Proper utilization and documentation of  semantic HTML, XML, and CSS</li>
-	<li>Proper understanding of responsive and adaptive design for dynamic platforms</li>
-	<li>Working knowledge of Photoshop, Illustrator, and Flash/Actionscript3</li>
-	<li>Can use Autodesk 3D Software such as Maya for 3D content creation</li>
+	<li>Full understanding of how to design layouts and documents for accessibility</li>
+	<li>object oriented design principles and software design patterns when applicable</li>
+	<li>Uses graphic design theory, responsive design, and adaptive design to craft dynamic user experiences</li>
+	<li>Effectively leads team projects with a variable number of members,  ranging from five to twenty-five</li>
 </ul>
 
 <?php

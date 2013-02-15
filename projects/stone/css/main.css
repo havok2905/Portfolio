@@ -1,0 +1,107 @@
+/**FONTS**/
+@font-face{
+	font-family: Gothic;
+	src: url('../fonts/leaguegothic-regular-webfont.ttf');
+}
+
+@font-face{
+	font-family: Alegreya;
+	src: url('../fonts/Alegreya-Regular.otf');
+}
+
+#container{
+	position: relative;
+	width:600px;
+	height:800px;
+	background-image:url('../img/background.png');
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+h1 span{display: none;}
+
+h2{
+	width:400px;
+	text-transform: uppercase;
+	font-family: Gothic;
+}
+
+h2.small{
+	font-size: 36px;
+	color:#333333;
+	margin-top: -20px;
+	margin-left: 20px;
+}
+
+h2.large{
+	position:absolute;
+	top:130px;
+	left:220px;
+	line-height: 60px;
+	font-size: 72px;
+	color:#e3ab43;
+}
+
+p{
+	color:#333333;
+	font-family: Alegreya;
+	font-size:26px;
+	line-height: 35px;
+	width:450px;
+	padding: 20px;
+	margin-top: 70px;
+	margin-left: 20px;
+}
+
+a span{display: none;}
+
+a.button{
+	text-align: center;
+	font-family: Gothic;
+	padding: 10px;
+	margin-left: 79px;
+	font-size:36px;
+	color:#e3ab43;
+	text-decoration: none;
+	background-color:#3e0c08;
+	border-radius: 15px;
+	box-shadow: #333 0px 3px 10px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+.button_container{
+	display: block;
+	background:url("../img/lines.png") no-repeat;
+	padding-top: 25px;
+	margin-top: 35px;
+	margin-left: 50px;
+}
+
+ul{
+	margin-left: 20px;
+}
+
+ul li{display: inline;}
+ul li img{vertical-align: middle;}
+ul li a{
+	color:#3e0c08;
+	font-family: Arial;
+	font-size:18px;
+	font-weight: bold;
+	font-style: italic;
+	text-decoration: none;
+}
+ul li a.link{
+	margin-left: 20px;
+	text-decoration: underline;
+}
+
+#bottle{
+	position:absolute;
+	top:242px;
+	left:453px;
+}
