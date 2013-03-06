@@ -1,7 +1,16 @@
-AddHandler application/x-httpd-php53 .php
-
-ErrorDocument 403 /Portfolio/403.php
-ErrorDocument 404 /Portfolio/404.php
-ErrorDocument 500 /Portfolio/500.php
-
+Options +FollowSymLinks
 Options -Indexes
+ErrorDocument 403 /Project4/403.php
+ErrorDocument 404 /Project4/404.php
+ErrorDocument 500 /Project4/500.php
+
+RewriteEngine On
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteRule ^index/?$ index.php
+RewriteRule ^me/?$ me.php
+RewriteRule ^resume/?$ resume.php
+RewriteRule ^blog/?$ blog.php
+RewriteRule ^work/?$ work.php
+RewriteRule ^blog/(\d+)/?$ ./post.php?post=$1
+RewriteRule ^work/(\d+)/?$ ./displayproject.php?project=$1

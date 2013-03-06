@@ -1,15 +1,13 @@
-<?php
-	namespace Portfolio;
+<?php 
+	namespace Portfolio; 
 
-	require_once("includes/bootstrap.php");
-	echo Layout::header("404");
+	require_once("classes/bootstrap.php");
+	echo Layout::header("403");
 ?>
 
 <div class="center_container">
-	<img src="/Portfolio/Portfolio/img/403.png" class="half" alt="403 error"/>
-	<p class="hidden">Error 404. Sorry, access denied.</p>
+	<img src="/Project4/img/403.png" class="half center" alt="403 error"/>
+	<p class="hidden">Error 403. Sorry, access denied.</p>
 </div>
 
-<?php
-	echo Layout::footer();
-?>
+<?= Layout::footer(); ?>

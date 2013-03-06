@@ -1,38 +1,23 @@
-<?php
-	namespace Portfolio;
+<?php 
+	namespace Portfolio; 
 
-	require_once("includes/bootstrap.php");
+	require_once("classes/bootstrap.php");
 	echo Layout::header("Blog");
-
-	$posts = Database::select("blog", array("id","title", "datecreated", "path", "category", "description"));
-	$posts = array_reverse($posts);
-
-	foreach ($posts as $key => $value) 
-	{
-		$id = $value["id"];
-		$title = $value["title"];
-		$datecreated = $value["datecreated"];
-		$path = $value["path"];
-		$category = $value["category"];
-		$description = $value["description"];
-
-		$comments = Database::select("comments", array("id"), array($id), "postId");
-		$numcomments = 0;
-
-		foreach ($comments as $key => $value) 
-		{
-			$numcomments++;
-		}
-		
-		print("
-			<div class='post_container'>
-				<h2><a href='post.php?post=$title'>$title</a></h2>
-				<h3 class='resume'>$category <span>".date("m-d-Y",strtotime($datecreated))."</span></h3>
-				<p>$description</p>
-				<span class='comment_icon'>$numcomments</span>
-			</div>
-		");
-	}
-
-	echo Layout::footer();
 ?>
+
+<?php
+	$posts = Database::query("SELECT * FROM blog ORDER BY id DESC");
+
+	foreach ($posts as $key => $post) 
+	{
+		$title = $post->title;
+		$description = $post->description;
+		$url = "/Project4/blog/" . $post->id;
+		$date = date("m-d-Y",strtotime($post->datecreated));
+
+		echo "<h2><a href='$url'>$title $date</a></h2>";
+		echo "<p>$description</p>";
+	}
+?>
+
+<?= Layout::footer(); ?>

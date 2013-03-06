@@ -1,66 +1,48 @@
-<?php
-	namespace Portfolio;
+<?php 
+	namespace Portfolio; 
 
-	require_once("includes/bootstrap.php");
+	require_once("classes/bootstrap.php");
 	echo Layout::header("Work");
 ?>
+
 <h2>My Collection of Work</h2>
-<div class="center_container">
-	<ul class="left work">
-		<li>
-			<a href="project.php?post=robosim">
-				<img src="img/robosimthumb.png" alt="robosim project icon"  class="shadow"/>
-				<h3>RoboSim</h3>
-			</a>
-		</li>
-		<li>
-			<a href="project.php?post=toysite">
-				<img src="img/toysthumb.png" alt="mclean toys project logo"  class="shadow"/>
-				<h3>Retro Toy Site</h3>
-			</a>
-		</li>
-		<li>
-			<a href="project.php?post=juular">
-				<img src="img/juularthumb.png" alt="lightbox plugin project icon"  class="shadow"/>
-				<h3>JQuery Lightbox</h3>
-			</a>
-		</li>
-		<li>
-			<a href="project.php?post=pdoclass">
-				<img src="img/regulatorthumb.png" alt="pdo wrapper project icon"  class="shadow"/>
-				<h3>PDO Class</h3>
-			</a>
-		</li>
-	</ul>
-	<ul class="left work">
-		<li>
-			<a href="project.php?post=personalsite">
-				<img src="img/personalsitethumb.png" alt="personal site project icon"  class="shadow"/>
-				<h3>Personal Site</h3>
-			</a>
-		</li>
-		<li>
-			<a href="project.php?post=stockexchange">
-				<img src="img/exchangethumb.png" alt="front-end exchange project icon"  class="shadow"/>
-				<h3>Stock Exchange</h3>
-			</a>
-		</li>
-		<li>
-			<a href="project.php?post=personalbrand">
-				<img src="img/personalbrandthumb.png" alt="personal brand project icon"  class="shadow"/>
-				<h3>Personal Brand</h3>
-			</a>
-		</li>
-		<li>
-			<a href="project.php?post=stone">
-				<img src="img/stonethumb.png" alt="stone email blast project icon"  class="shadow"/>
-				<h3>Stone Email Blast</h3>
-			</a>
-		</li>
-	</ul>
-	<div class="clear"></div>
-</div>
 
 <?php
-	echo Layout::footer();
+	$projects = Database::query("SELECT * FROM projects");
+
+	foreach($projects as $key => $project) 
+	{
+		$thumb = "/Project4/" . $project->thumb;
+		$alt = $project->alt;
+		$url = "/Project4/work/" . $project->id;
+
+		if($key == 0)
+		{
+			echo "<ul class='work start'>";
+		}
+		else if($key % 4 == 0)
+		{
+			echo "<ul class='work'>";
+		}
+
+		if($key % 4 == 1)
+		{
+			echo "<li><a href='$url'><img src='$thumb' alt='$alt' class='shadow middle-left'/></a></li>";
+		}
+		else if($key % 4 == 2)
+		{
+			echo "<li><a href='$url'><img src='$thumb' alt='$alt' class='shadow middle-right'/></a></li>";
+		}
+		else
+		{
+			echo "<li><a href='$url'><img src='$thumb' alt='$alt' class='shadow'/></a></li>";
+		}
+
+		if($key % 4 == 3)
+		{
+			echo "</ul>";
+		}
+	}
 ?>
+
+<?= Layout::footer(); ?>

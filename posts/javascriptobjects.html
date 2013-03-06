@@ -1,0 +1,140 @@
+<h2>A Journey with JavaScript Objects</h2>
+<h3>Introduction</h3>
+<p>
+	When conversing about different object oriented programming languages, you will mostly hear about Java or C++. Web Developers may mention PHP, Python, or Ruby. Not many people though will mention JavaScript. It seems to become a trend to introduce this language to new web developers early in their education, before learning how to work with objects and classes. This makes sense to a certain extent, since it is a fairly easy language to pick up and it is easy to get something working very quickly in a web environment with JavaScript. However, because of this early introduction, not many new web developers are introduced to the notion that JavaScript is a fully fledged object oriented language. I want to take some time to explore the different methodologies that exist in approaching object oriented design in JavaScript using design patterns, object literals, and native JavaScript prototypes. 
+</p>
+<h3>Object Literals</h3>
+<p>
+	JavaScript supports the representation of associative arrays, and other simple data structures in the form of object literals. Usage of objects like this can be very powerful and are very common to use in JavaScript design patterns. They are also used in web services, inspiring the creation of JSON, which stands for JavaScript Object Notation. Below, I provide a basic example of this to show you how object literals can be used.
+</p>
+<pre class="brush: js; first-line: 1;">
+var album = {
+	"title" : "Blast Tyrant",
+	"band" : "Clutch",
+	"tracks" : {
+		"Regulator" : {
+			"length" : "5:29",
+			"rating" : 5
+		}, 
+		"The Ghost" : {
+			"length" : "4:38",
+			"rating" :  5
+		}
+	},
+	"Release Dates" : [2004, 2011]
+};
+</pre>
+<h3>JavaScript Design Patterns</h3>
+<p>
+	Design patterns are blocks of code that developers use continuously for similar problems. Specifically, we are going to look at the Revealing Module Pattern, and the Singleton Pattern. JavaScript by nature does not support the native construction of classes like most programming languages would define a class. JavaScript is by nature a prototype language and won't allow for the kind of structures we might be used to in Java or C++. It is because of this that developers have come up with code structures to mimic this kind of behavior. We will cover more on JavaScript prototypes in the next section.
+</p>
+<h4>The Revealing Module Pattern</h4>
+<p>
+	The Revealing Module Pattern is a design pattern built around providing public and private functionality to a class like structure, which is something that JavaScript lacks natively. We accomplish this by building functions nested within a root function which returns an object with our public data and methods.
+</p>
+<pre class="brush: js; first-line: 1;">
+var Album = function(newartist, newname, newtracks)
+{
+	public_artist = newartist;
+	private_tracks = newtracks;
+	private_name = newname;
+
+	function public_getName()
+	{
+		return private_name;
+	}
+
+	function public_setName(newname)
+	{
+		if(typeof(newname) == 'string')
+		{	
+			private_name = newname;
+		}
+		else
+		{	
+			console.log('name must be an string');
+		}
+	}
+
+	return {
+		getName:public_getName,
+		setName:public_setName,
+		artist:public_artist
+	}
+}
+
+var blastTyrant = new Album('Clutch', 'Blast Tyrant', ['Ghost', 'Regulator']);
+console.log(blastTyrant.artist);
+console.log(blastTyrant.name); // Undefined because private
+console.log(blastTyrant.tracks); // Undefined because private
+console.log(blastTyrant.setName("foobar"));
+console.log(blastTyrant.getName());
+</pre>
+<h4>The Singleton Pattern</h4>
+<p>
+	The singleton pattern is used when you want the stand alone nature of a static class, but also have the ability to pass an object around. Typically, you only want only one instance of this class to exist. This could be used for making a database connection to avoid multiple connections that will affect performance, or possibly a shopping cart for an ecommerce website.
+</p>
+<p>
+	This works by having an automatically executing function set cart to a function that does the following.
+</p>
+<ol>
+	<li>Check to see if a variable self exists and return that variable.</li>
+	<li>If self has not been found, the program will continue and set self to the current object. This should only happen the first time the singleton object is created.</li>
+	<li>Appends new properties and methods to itself.</li>
+</ol>
+<pre class="brush: js; first-line: 1;">
+var Cart;
+
+(function() 
+{
+	var self;
+
+	Cart = function Cart() 
+	{
+		if (self) 
+		{
+			return self;
+		}
+
+		self = this;
+		this.items = [];
+		this.setItem = function(item, qty)
+		{ 
+			this.items.push({"item":item, "qty":qty});
+		}
+	};
+}());
+</pre>
+<h3>JavaScript Prototypes</h3>
+<p>
+	Now that we have taken a look at some of the ways developers mimic classic class based programming, let's take a look at JavaScript's native feature, the prototype. A prototype in JavaScript is a property of an object which allows you to append to it. All instances share the same prototype when created which prevents using more memory for redundant code. The previous examples work great, except when you need to create a large number of objects and retain a decent performance speed. This is where JavaScript prototypes come it. You use them like so. 
+</p>
+<pre class="brush: js; first-line: 1;">
+function Album(name, artist, tracks)
+{
+	this.name = name; 
+	this.artist = artist;
+	this.tracks = tracks;
+}
+
+Album.prototype.toString = function()
+{
+	console.log(this.name + ' ' + this.artist + ' ' + this.tracks);
+}
+
+var blastTyrant = new Album('Blast Tyrant', 'Clutch', ['Ghost', 'Regulator']); 
+blastTyrant.toString();
+</pre>
+<h3>Conclusion</h3>
+<p>
+	There are many ways to handle object oriented design in JavaScript and many more than I have covered here. Although not every problem in web development may call for object orientation, it is good to remember that modular coding can be greatly aided by it. I highly suggest reading through some of the material I list below. The articles will introduce you to many different variations of these topics as well as some entirely different ways to handle writing JavaScript. Happy coding! 
+</p>
+<h3>Further Reading/Sources</h3>
+<ul>
+	<li><a href="http://net.tutsplus.com/tutorials/javascript-ajax/prototypes-in-javascript-what-you-need-to-know/" target="_blank">http://net.tutsplus.com/tutorials/javascript-ajax/prototypes-in-javascript-what-you-need-to-know/</a></li>
+	<li><a href="http://addyosmani.com/resources/essentialjsdesignpatterns/book/" target="_blank">http://addyosmani.com/resources/essentialjsdesignpatterns/book/</a></li>
+	<li><a href="http://www.w3resource.com/JSON/introduction.php" target="_blank">http://www.w3resource.com/JSON/introduction.php</a></li>
+	<li><a href="http://robdodson.me/blog/2012/08/08/javascript-design-patterns-singleton/">http://robdodson.me/blog/2012/08/08/javascript-design-patterns-singleton/</a></li>
+</ul>
+
+
