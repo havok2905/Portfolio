@@ -12,7 +12,7 @@
 	{
 		$title = $post->title;
 		$description = $post->description;
-		$url = "/Project4/blog/" . $post->id;
+		$url = "/Portfolio/blog/" . $post->id;
 		$date = date("m-d-Y",strtotime($post->datecreated));
 
 		echo "<h2><a href='$url'>$title $date</a></h2>";

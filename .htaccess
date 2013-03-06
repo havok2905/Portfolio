@@ -1,8 +1,8 @@
 Options +FollowSymLinks
 Options -Indexes
-ErrorDocument 403 /Project4/403.php
-ErrorDocument 404 /Project4/404.php
-ErrorDocument 500 /Project4/500.php
+ErrorDocument 403 /Portfolio/403.php
+ErrorDocument 404 /Portfolio/404.php
+ErrorDocument 500 /Portfolio/500.php
 
 RewriteEngine On
 RewriteCond %{SCRIPT_FILENAME} !-d

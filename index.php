@@ -9,7 +9,7 @@
 	<div id="stage_header">
 		<h2><a href="#">The Shadow Fan Website : Project using SVG and Vector Design</a></h2>
 	</div>
-	<img src="/Project4/img/shadowbanner.png" alt="banner image for the shadow fan website project" class="full"/>
+	<img src="/Portfolio/img/shadowbanner.png" alt="banner image for the shadow fan website project" class="full"/>
 </div>
 
 <div class="two-thirds">
@@ -25,7 +25,7 @@
 		 very quickly in a web environment with JavaScript.
 	</p>
 </div>
-<a class="arrow" href="/Project4/resume/">View <br/> My Resume</a>
+<a class="arrow" href="/Portfolio/resume/">View <br/> My Resume</a>
 <div class="clear"></div>
 
 <?= Layout::footer(); ?>

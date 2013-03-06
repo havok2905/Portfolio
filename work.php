@@ -12,9 +12,9 @@
 
 	foreach($projects as $key => $project) 
 	{
-		$thumb = "/Project4/" . $project->thumb;
+		$thumb = "/Portfolio/" . $project->thumb;
 		$alt = $project->alt;
-		$url = "/Project4/work/" . $project->id;
+		$url = "/Portfolio/work/" . $project->id;
 
 		if($key == 0)
 		{

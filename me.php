@@ -5,7 +5,7 @@
 	echo Layout::header("Me");
 ?>
 <h2>Welcome to my Corner of the Internet</h2>
-<img src="/Project4/img/me.png" id="me" alt="picture of Christopher McLean"/>
+<img src="/Portfolio/img/me.png" id="me" alt="picture of Christopher McLean"/>
 <p>
 	Hi, my name is Christopher McLean and I am both a web developer 
 	and a web designer living in Orlando Florida. The University of 
@@ -19,6 +19,6 @@
 	that are accessible to individuals with disabilities as well as develop web 
 	applications for the University using JavaScript and PHP.
 </p>
-<img src="/Project4/img/computerguy.png" id="computer-guy" alt="graphic of a guy sitting at a computer"/>
+<img src="/Portfolio/img/computerguy.png" id="computer-guy" alt="graphic of a guy sitting at a computer"/>
 <div class="clear"></div>
 <?= Layout::footer(); ?>

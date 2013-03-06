@@ -74,6 +74,7 @@ p, li, dt, dd, input, textarea, label{
 	font-family: comfortaa, "sans-serif";
 	font-size: 0.875em;
 	font-weight: bold;
+	letter-spacing: 0.1em;
 	color: #333333;
 	line-height: 1.5em;
 }

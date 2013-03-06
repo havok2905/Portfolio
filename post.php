@@ -14,19 +14,19 @@
 	
 	if(isset($post[0]))
 	{
-		$path = "../Project4/" . $post[0]->path;
+		$path = "../Portfolio/" . $post[0]->path;
 		if(file_exists($path))
 		{
 			include($path);	
 		}
 		else
 		{
-			header("Location:/Project4/404.php");
+			header("Location:/Portfolio/404.php");
 		}	
 	}
 	else
 	{
-		header("Location:/Project4/404.php");
+		header("Location:/Portfolio/404.php");
 	}	
 ?>
 

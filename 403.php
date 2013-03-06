@@ -6,7 +6,7 @@
 ?>
 
 <div class="center_container">
-	<img src="/Project4/img/403.png" class="half center" alt="403 error"/>
+	<img src="/Portfolio/img/403.png" class="half center" alt="403 error"/>
 	<p class="hidden">Error 403. Sorry, access denied.</p>
 </div>
 
