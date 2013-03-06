@@ -25,12 +25,10 @@
 	<h2>Education</h2>
 	<ul>
 		<li>University of Central Florida</li>
+		<li>Orlando Florida</li>
 		<li>Expected Graduation May 2013</li>
 		<li>Bachelor of Arts in Digital Media</li>
 		<li>Concentration: Web Design</li>
-	</ul>
-	<ul>
-		<li>Orlando Florida</li>
 		<li>Cumulative GPA: 3.31</li>
 		<li>Concentration GPA: 3.61</li>
 		<li>Dean's List - Fall 2011 - Spring 2013</li>
