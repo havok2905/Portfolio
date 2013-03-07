@@ -25,6 +25,10 @@ class Layout
 		</script>
 	</head>
 	<body>
+			<audio>
+				<source src="/Portfolio/mp3/beep.mp3">
+				<source src="/Portfolio/mp3/beep.wav">
+			</audio>
 			<div class="container">
 				<nav id="social">
 					<a href="https://plus.google.com/108287038105459970762/posts" target="_blank"><img src="/Portfolio/img/google.png" alt="google plus icon"/><span class="hidden">Google Plus</span></a>
@@ -37,11 +41,11 @@ class Layout
 				<div class="container">
 					<h1><a href="/Portfolio/index/">Christopher McLean</a></h1>
 					<nav>
-						<a href="/Portfolio/index/">Home</a>
-						<a href="/Portfolio/me/">Me</a>
-						<a href="/Portfolio/resume/">Resume</a>
-						<a href="/Portfolio/blog/">Blog</a>
-						<a href="/Portfolio/work/" class="last-right">Work</a>
+						<a class="nav-link" href="/Portfolio/index/">Home</a>
+						<a class="nav-link" href="/Portfolio/me/">Me</a>
+						<a class="nav-link" href="/Portfolio/resume/">Resume</a>
+						<a class="nav-link" href="/Portfolio/blog/">Blog</a>
+						<a class="nav-link" href="/Portfolio/work/" class="last-right">Work</a>
 					</nav>
 				</div>
 			</div>

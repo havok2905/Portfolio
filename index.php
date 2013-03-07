@@ -6,10 +6,23 @@
 ?>
 
 <div id="stage" class="shadow">
+	<?php 
+		$projects = Database::query("SELECT * FROM projects LIMIT 5");
+	?>
+
 	<div id="stage_header">
-		<h2><a href="#">The Shadow Fan Website : Project using SVG and Vector Design</a></h2>
+		<h2><a href="#"></a></h2>
 	</div>
-	<img src="/Portfolio/img/shadowbanner.png" alt="banner image for the shadow fan website project" class="full"/>
+	<ul id="stage-images">
+	<?php
+		foreach ($projects as $key => $project) 
+		{
+			$banner = "/Portfolio/" . $project->banner;
+			$alt = $project->alt;
+			echo "<li><img src='$banner' alt='$alt' class='full'/></li>";
+		}
+	?>
+	</ul>
 </div>
 
 <div class="two-thirds">

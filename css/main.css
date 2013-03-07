@@ -9,18 +9,22 @@
 
 @font-face{
 	font-family: bebas;
-	src:url("../fonts/bebasneue-webfont.ttf");
-	src:url("../fonts/bebasneue-webfont.woff");
-	src:url("../fonts/bebasneue-webfont.eot");
-	src:url("../fonts/bebasneue-webfont.otf");
+	src: url('../fonts/BebasNeue-webfont.eot');
+    src: url('../fonts/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/BebasNeue-webfont.woff') format('woff'),
+         url('../fonts/BebasNeue-webfont.ttf') format('truetype'),
+         url('../fonts/BebasNeue-webfont.svg#BebasNeue') format('svg');
 }
 
 @font-face{
-	font-family: comfortaa;
-	src:url("../fonts/comfortaa_regular-webfont.ttf");
-	src:url("../fonts/comfortaa_regular-webfont.woff");
-	src:url("../fonts/comfortaa_regular-webfont.eot");
-	src:url("../fonts/comfortaa_regular-webfont.otf");
+	font-family: 'VarelaRoundRegular';
+    src: url('../fonts/VarelaRound-Regular-webfont.eot');
+    src: url('../fonts/VarelaRound-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/VarelaRound-Regular-webfont.woff') format('woff'),
+         url('../fonts/VarelaRound-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/VarelaRound-Regular-webfont.svg#VarelaRoundRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 /*********************/
@@ -54,7 +58,7 @@ h3{
 }
 
 h4{
-	font-family: comfortaa, "sans-serif";
+	font-family: VarelaRoundRegular, "sans-serif";
 	font-size: 1.2em;
 	font-weight: bold;
 	margin-top: 0.75em;
@@ -71,10 +75,8 @@ a{
 a:hover{text-decoration: underline;}
 
 p, li, dt, dd, input, textarea, label{
-	font-family: comfortaa, "sans-serif";
+	font-family: VarelaRoundRegular, "sans-serif";
 	font-size: 0.875em;
-	font-weight: bold;
-	letter-spacing: 0.1em;
 	color: #333333;
 	line-height: 1.5em;
 }
@@ -284,6 +286,9 @@ textarea{
 #stage{
 	margin-top: 1em;
 	position: relative;
+	overflow: visible;
+	width: 100%;
+	height: 257px;
 }
 #stage h2{
 	margin: 0;
@@ -297,6 +302,10 @@ textarea{
 }
 #stage h2 a{
 	color:#ffffff;
+}
+
+#stage-images li img{
+	position: absolute;
 }
 
 .arrow{
