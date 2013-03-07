@@ -11,6 +11,7 @@ class Layout
 	<head>
 		<title>Christopher McLean Web Development and Design $title</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<link rel="stylesheet" type="text/css" href="/Portfolio/css/reset.css"/>
 		<link rel="stylesheet" type="text/css" href="/Portfolio/css/main.css"/>
 		<script type="text/javascript" src="/Portfolio/js/jquery.js"></script>

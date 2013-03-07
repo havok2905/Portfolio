@@ -23,7 +23,7 @@
 			$alt = $project->alt;
 			$url = "/Portfolio/work/" . $project->id;
 
-			echo "<li><a href='$url' id='$key' class='full'><img src='$banner' alt='$alt' class='full'/></a></li>";
+			echo "<li><a href='$url' id='img$key' class='full'><img src='$banner' alt='$alt' class='full'/></a></li>";
 		}
 	?>
 	</ul>
