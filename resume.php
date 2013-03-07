@@ -7,7 +7,7 @@
 ?>
 
 <div class="page shadow">
-	<h2>Christopher William McLean</h2>
+	<h2>Resume for Christopher William McLean</h2>
 	<dl>
 		<dt>Address- </dt>
 			<dd> 1829 Loftway Circle APT 1422, Orlando FL 32826</dd>

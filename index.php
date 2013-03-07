@@ -8,18 +8,22 @@
 <div id="stage" class="shadow">
 	<?php 
 		$projects = Database::query("SELECT * FROM projects ORDER BY id DESC LIMIT 5");
+		
+		$url = "/Portfolio/work/" . $projects[0]->id;
+		$title = $projects[0]->title;
+		echo "<div id='stage-header'><h2><a href='$url'>$title</a></h2></div>";
 	?>
 
-	<div id="stage_header">
-		<h2><a href="#"></a></h2>
-	</div>
+	
 	<ul id="stage-images">
 	<?php
 		foreach ($projects as $key => $project) 
 		{
 			$banner = "/Portfolio/" . $project->banner;
 			$alt = $project->alt;
-			echo "<li><img src='$banner' alt='$alt' id='$key' class='full'/></li>";
+			$url = "/Portfolio/work/" . $project->id;
+
+			echo "<li><a href='$url' id='$key' class='full'><img src='$banner' alt='$alt' class='full'/></a></li>";
 		}
 	?>
 	</ul>
