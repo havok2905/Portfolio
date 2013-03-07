@@ -8,7 +8,7 @@
 <h2>My Collection of Work</h2>
 
 <?php
-	$projects = Database::query("SELECT * FROM projects");
+	$projects = Database::query("SELECT * FROM projects ORDER BY id DESC");
 
 	foreach($projects as $key => $project) 
 	{
