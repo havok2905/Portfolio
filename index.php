@@ -7,7 +7,7 @@
 
 <div id="stage" class="shadow">
 	<?php 
-		$projects = Database::query("SELECT * FROM projects LIMIT 5");
+		$projects = Database::query("SELECT * FROM projects ORDER BY id DESC LIMIT 5");
 	?>
 
 	<div id="stage_header">
@@ -26,17 +26,15 @@
 </div>
 
 <div class="two-thirds">
-	<h2><a href="#">A Journey in Object Oriented JavaScript</a></h2>
-	<p>
-		When conversing about different object oriented programming languages, 
-		you will mostly hear about Java or C++. Web Developers may make mention
-		 of PHP, Python, or Ruby. Not many people though will mention JavaScript. 
-		 It seems to become a trend to introduce this language to new web 
-		 developers early in their education, before learning how to work with 
-		 objects and classes. This makes sense to a certain extent, since it is a 
-		 fairly easy language to pick up and it is easy to get something working 
-		 very quickly in a web environment with JavaScript.
-	</p>
+<?php
+	$projects = Database::query("SELECT * FROM blog ORDER BY id DESC LIMIT 1");
+	$title = $projects[0]->title;
+	$url   = "/Portfolio/blog/" . $projects[0]->id;
+	$description = $projects[0]->description;
+
+	echo "<h2><a href='$url'>$title</a></h2>";
+	echo "<p>$description</p>";
+?>
 </div>
 <a class="arrow" href="/Portfolio/resume/">View <br/> My Resume</a>
 <div class="clear"></div>
