@@ -19,7 +19,7 @@
 		{
 			$banner = "/Portfolio/" . $project->banner;
 			$alt = $project->alt;
-			echo "<li><img src='$banner' alt='$alt' class='full'/></li>";
+			echo "<li><img src='$banner' alt='$alt' id='$key' class='full'/></li>";
 		}
 	?>
 	</ul>
