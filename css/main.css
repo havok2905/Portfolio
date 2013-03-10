@@ -346,12 +346,7 @@ textarea{
 	float: left;
 	margin-right: 3em;
 	margin-bottom: 1em;
-}
-
-#computer-guy{
-	float: right;
-	margin-left: 1em;
-	vertical-align: bottom;
+	vertical-align: middle;
 }
 
 /*********************/
