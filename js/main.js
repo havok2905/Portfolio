@@ -24,7 +24,7 @@ function handleSlider()
 	var total_width = 0; 
 	var count = 5;
 
-	$.post("../controllers/projectcontroller.php", function(data)
+	$.post("/Portfolio/controllers/projectcontroller.php", function(data)
 	{
 		response = data;
 	});
