@@ -2,6 +2,7 @@ $(document).ready(function()
 {
 	handleSound();
 	handleSlider();
+	handleEmail();
 });
 
 function handleSound()
@@ -17,6 +18,11 @@ function handleSound()
 			$("audio").get(0).pause();
 		}
 	);
+}
+
+function handleEmail()
+{
+
 }
 
 function handleSlider()
