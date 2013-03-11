@@ -22,7 +22,33 @@ function handleSound()
 
 function handleEmail()
 {
+	$("#name,#subject,#email,#message").focus(function()
+	{
+		var input_string = $(this).val();
+		console.log(validateLength(input_string));
+	});
 
+	validateEmail("");
+}
+
+function validateLength(input_string)
+{	
+	if(input_string.length > 0)
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+}
+
+function validateEmail(input_string)
+{
+	input_string = "havok2905@gmail.com";
+	var regex = new RegExp("^[a-zA-Z0-9_.-]+@{1}[a-zA-Z0-9_\.-]+[\.]{1}[a-zA-Z0-9_.-]+$");
+		console.log(regex.test(input_string));
+		console.log(regex.exec(input_string));
 }
 
 function handleSlider()

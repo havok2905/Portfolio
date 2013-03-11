@@ -71,19 +71,19 @@ EOT;
 				<form action="" method="post">
 					<div class="input">
 						<label for="name">Name: </label>
-						<input type="text" name="name"/>
+						<input type="text" name="name" id="name" value=""/>
 					</div>
 					<div class="input">
 						<label for="subject">Subject: </label>
-						<input type="text" name="subject"/>
+						<input type="text" name="subject" id="subject" value=""/>
 					</div>
 					<div class="input">
 						<label for="email">Email: </label>
-						<input type="text" name="email"/>
+						<input type="text" name="email" id="email" value=""/>
 					</div>
 					<div class="input">
 						<label for="message">Message: </label>
-						<textarea name="message"></textarea>
+						<textarea name="message" id="message"></textarea>
 					</div>
 					<input type="submit" class="submit" value="send"/>
 				</form>
