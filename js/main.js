@@ -22,13 +22,61 @@ function handleSound()
 
 function handleEmail()
 {
-	$("#name,#subject,#email,#message").focus(function()
+	$("#name,#subject,#email,#message").blur(function()
 	{
 		var input_string = $(this).val();
-		console.log(validateLength(input_string));
+		switch($(this).attr("id"))
+		{
+			case "email":
+				if(validateEmail(input_string))
+				{
+					$(this).prev().css("color","green");
+				}
+				else
+				{
+					$(this).prev().css("color","red");
+				}
+				break;
+			default:
+				if(validateLength(input_string))
+				{
+					$(this).prev().css("color","green");
+				}
+				else
+				{
+					$(this).prev().css("color","red");
+				}
+				break;
+		}
 	});
 
-	validateEmail("");
+	$("#name,#subject,#email,#message").keyup(function()
+	{
+		var input_string = $(this).val();
+		switch($(this).attr("id"))
+		{
+			case "email":
+				if(validateEmail(input_string))
+				{
+					$(this).prev().css("color","green");
+				}
+				else
+				{
+					$(this).prev().css("color","red");
+				}
+				break;
+			default:
+				if(validateLength(input_string))
+				{
+					$(this).prev().css("color","green");
+				}
+				else
+				{
+					$(this).prev().css("color","red");
+				}
+				break;
+		}
+	});
 }
 
 function validateLength(input_string)
@@ -45,10 +93,8 @@ function validateLength(input_string)
 
 function validateEmail(input_string)
 {
-	input_string = "havok2905@gmail.com";
 	var regex = new RegExp("^[a-zA-Z0-9_.-]+@{1}[a-zA-Z0-9_\.-]+[\.]{1}[a-zA-Z0-9_.-]+$");
-		console.log(regex.test(input_string));
-		console.log(regex.exec(input_string));
+	return regex.test(input_string);
 }
 
 function handleSlider()
