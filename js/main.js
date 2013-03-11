@@ -22,61 +22,79 @@ function handleSound()
 
 function handleEmail()
 {
+	v_name = false; 
+	v_subject = false;
+	v_email = false;
+	v_message = false; 
+
 	$("#name,#subject,#email,#message").blur(function()
 	{
 		var input_string = $(this).val();
-		switch($(this).attr("id"))
-		{
-			case "email":
-				if(validateEmail(input_string))
-				{
-					$(this).prev().css("color","green");
-				}
-				else
-				{
-					$(this).prev().css("color","red");
-				}
-				break;
-			default:
-				if(validateLength(input_string))
-				{
-					$(this).prev().css("color","green");
-				}
-				else
-				{
-					$(this).prev().css("color","red");
-				}
-				break;
-		}
+		var id = $(this).attr("id");
+		colorChange(id, input_string, $(this));
+		console.log("blur");
 	});
 
 	$("#name,#subject,#email,#message").keyup(function()
 	{
 		var input_string = $(this).val();
-		switch($(this).attr("id"))
-		{
-			case "email":
-				if(validateEmail(input_string))
-				{
-					$(this).prev().css("color","green");
-				}
-				else
-				{
-					$(this).prev().css("color","red");
-				}
-				break;
-			default:
-				if(validateLength(input_string))
-				{
-					$(this).prev().css("color","green");
-				}
-				else
-				{
-					$(this).prev().css("color","red");
-				}
-				break;
-		}
+		var id = $(this).attr("id");
+		colorChange(id, input_string, $(this));
+		console.log("up");
 	});
+}
+
+function colorChange(id, input_string, element)
+{
+	switch(id)
+	{
+		case "email":
+			if(validateEmail(input_string))
+			{
+				element.prev().css("color","green");
+			}
+			else
+			{
+				element.prev().css("color","red");
+			}
+			break;
+		case "name":
+			if(validateLength(input_string))
+			{
+				v_name = true;
+				element.prev().css("color","green");
+			}
+			else
+			{
+				v_name = false;
+				element.prev().css("color","red");
+			}
+			break;
+		case "subject":
+			if(validateLength(input_string))
+			{
+				v_subject = true;
+				element.prev().css("color","green");
+			}
+			else
+			{
+				v_name = false;
+				element.prev().css("color","red");
+			}
+			break;
+		case "message":
+			if(validateLength(input_string))
+			{
+				v_message = true;
+				element.prev().css("color","green");
+			}
+			else
+			{
+				v_name = false;
+				element.prev().css("color","red");
+			}
+			break;
+	}
 }
 
 function validateLength(input_string)
