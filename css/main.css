@@ -90,12 +90,33 @@ p, dl, ol, ul{
 	margin-bottom: 1em;
 }
 
+ul li{
+	list-style-type: disc;
+	margin-left: 1.5em;
+}
+
+ol li{
+	list-style-type: decimal;
+	margin-left: 1.5em;
+}
+
+dt{
+	font-weight: bold;
+}
+
+strong{
+	font-weight: bold;
+}
+
 img{margin-bottom: -0.25em;}
 
 .page{
 	margin-top: 1em;
 	border-radius: 0.5em;
 	padding: 1em;
+	background-color: #ffffff;
+}
+.page.background{
 	background:#ffffff url("../img/iconlarge.png") top right no-repeat;
 }
 
@@ -126,6 +147,7 @@ img{margin-bottom: -0.25em;}
 	width:29%;
 }
 .half{
+	float: left;
 	width: 50%;
 }
 
@@ -138,10 +160,50 @@ img{margin-bottom: -0.25em;}
 	margin-left: 0;
 }
 
-.marked li{
-	list-style-type: disc;
+.unmarked li{
+	list-style-type: none;
+	margin-left: 0;
+}
+
+.accordian li{
+	list-style-type: none;
+	margin-left: 0;
+	width:100%;
+	background-color: #2a88a5;
+	color:#ffffff;
+	padding:1em;
+	margin-top: 0.2em;
+	margin-bottom: 0.2em;
+	-webkit-transition: background-color 0.5s;
+	-moz-transition: background-color 0.5s;
+}
+.accordian li:hover{
+	background-color: #0f3845;
+}
+.accordian li span{
+	float: right;
+}
+.accordian li div{
+	display: none;
+}
+.accordian li p{
+	color: #ffffff;
+	display: inline-block;
+	width: 70%;
 	margin-left: 1em;
-	margin-top: 1em;
+	
+}
+.accordian li div ul{
+	width: 20%; 
+	border-right:solid 0.25em #fff;
+	display: inline-block;
+	vertical-align: top;
+}
+.accordian li div ul li{
+	background: none;
+}
+.accordian li div ul li:hover{
+	background: none
 }
 
 /*********************/
@@ -227,7 +289,7 @@ footer h3{
 	margin-top: 0;
 }
 
-footer h2, footer h3, footer li{
+footer h2, footer h3, footer li, footer p{
 	color:#ffffff;
 }
 
@@ -247,6 +309,7 @@ form{
 
 label{
 	float: left;
+	font-weight: bold;
 }
 
 input{
@@ -352,9 +415,10 @@ textarea{
 
 #me{
 	float: left;
+	margin-top: 1.5em;
 	margin-right: 3em;
 	margin-bottom: 1em;
-	vertical-align: middle;
+	vertical-align: top;
 }
 
 /*********************/

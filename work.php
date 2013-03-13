@@ -18,11 +18,11 @@
 
 		if($key == 0)
 		{
-			echo "<ul class='work start'>";
+			echo "<ul class='work start unmarked'>";
 		}
 		else if($key % 4 == 0)
 		{
-			echo "<ul class='work'>";
+			echo "<ul class='work unmarked'>";
 		}
 
 		if($key % 4 == 1)

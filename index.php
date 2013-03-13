@@ -15,7 +15,7 @@
 	?>
 
 	
-	<ul id="stage-images">
+	<ul id="stage-images" class="unmarked">
 	<?php
 		foreach ($projects as $key => $project) 
 		{

@@ -6,7 +6,7 @@
 	echo Layout::header("Resume");
 ?>
 
-<div class="page shadow">
+<div class="page background shadow">
 	<h2>Resume for Christopher William McLean</h2>
 	<dl>
 		<dt>Address- </dt>
@@ -18,10 +18,6 @@
 		<dt>Website- </dt>
 			<dd> www.mcleancode.com</dd>
 	</dl>
-	<h2>Objective</h2>
-	<p>
-		Seeking a position as a web professional developing web applications and websites.
-	</p>
 	<h2>Education</h2>
 	<ul>
 		<li>University of Central Florida</li>

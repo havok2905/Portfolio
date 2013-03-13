@@ -3,11 +3,11 @@ namespace Portfolio;
 
 class Email
 {
-	private static $errors;
+	private static $errors = array();
 
 	public static function get_errors()
 	{
-		return $errors;
+		return self::$errors;
 	}
 
 	public static function set_error($error)
@@ -24,7 +24,7 @@ class Email
 		}
 		else
 		{
-			self::set_error("Email is not valid.");
+			self::set_error("Email is not valid");
 			return false;
 		}
 	}
@@ -33,7 +33,12 @@ class Email
 	{	
 		if(strlen($name) == 0 || strlen($subject) == 0 || strlen($email) == 0 || strlen($message) == 0)
 		{
-			self::set_error("A field ishas been left blank.");
+			self::set_error("A field has been left blank");
+			return false;
+		}
+		else
+		{
+			return true;
 		}
 	}
 
